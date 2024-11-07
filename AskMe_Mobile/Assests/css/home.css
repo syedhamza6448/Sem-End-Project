@@ -502,7 +502,7 @@ swiper-slide img:hover {
 .android-bg {
     width: 40%;
     height: 40%;
-    background-image: url(/Assests/images/android-logo.png);
+    background-image: url(../images/android-logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -514,7 +514,7 @@ swiper-slide img:hover {
 .ios-bg {
     width: 40%;
     height: 40%;
-    background-image: url(/Assests/images/Apple-logo.png);
+    background-image: url(../images/Apple-logo.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
@@ -574,28 +574,28 @@ swiper-slide img:hover {
     background-repeat: no-repeat;
 }
 .nokia {
-    background-image: url(/Assests/images/Nokia-logo.png);
+    background-image: url(../images/Nokia-logo.png);
 }
 .redmi {
-    background-image: url(/Assests/images/Redmi-Logo.png);
+    background-image: url(../images/Redmi-Logo.png);
 }
 .pixels {
-    background-image: url(/Assests/images/g-pixel-logo.webp);
+    background-image: url(../images/g-pixel-logo.webp);
 }
 .oneplus {
-    background-image: url(/Assests/images/OnePlus-logo.webp);
+    background-image: url(../images/OnePlus-logo.webp);
 }
 .samsung {
-    background-image: url(/Assests/images/samsung-logo.png);
+    background-image: url(../images/samsung-logo.png);
 }
 .iphone {
-    background-image: url(/Assests/images/iphone-logo.png);
+    background-image: url(../images/iphone-logo.png);
 }
 .ipod {
-    background-image: url(/Assests/images/ipod-logo.png);
+    background-image: url(../images/ipod-logo.png);
 }
 .ipad {
-    background-image: url(/Assests/images/ipad-logo.png);
+    background-image: url(../images/ipad-logo.png);
 }
 .show {
     display: flex;
