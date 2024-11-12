@@ -98,7 +98,15 @@
         }
     })
 
+opaDiv = document.getElementById("opacity");
 
+opaDiv.addEventListener("mouseover", function(){
+  opaDiv.style.opacity = 0.9;
+  opaDiv.style.transition = "1s"
+})
+opaDiv.addEventListener("mouseout", function(){
+  opaDiv.style.opacity = 0.7;
+})
 
 
 
