@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Footer -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <!-- Own -->
     <link rel="stylesheet" href="../Assests/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="../Assests/css/contact.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -23,6 +26,7 @@
     <ul style="z-index: 123;">
     <li><a href='home.html'>HOME</a></li>
     <li><a href='about.html'>ABOUT</a></li>
+    <li><a href='about.html'>COMPARE</a></li>
     <li><a href='#'>PHONES</a>
        <ul>
           <li><a href='#'>iOS</a>
@@ -51,22 +55,79 @@
 <div class="container my-5">
     <h2 class="text-center mb-4">Contact Us</h2>
     <form>
-        <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" required>
+        <div class="group">
+            <input required="" type="text" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Name</label>
         </div>
-        <div class="mb-3">
-            <label for="email" class="form-label">Email Address</label>
-            <input type="email" class="form-control" id="email" required>
+        <div class="group">
+            <input required="" type="text" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Email Address</label>
         </div>
-        <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="4" required></textarea>
+        <div class="group">
+            <input required="" type="text" class="input">
+            <span class="highlight"></span>
+            <span class="bar"></span>
+            <label>Phone No.</label>
         </div>
-        <button type="submit" class="btn btn-primary text-dark">Submit</button>
+        <button>
+            <span>BUTTON</span>
+          </button>          
     </form>
 </div>
 
+<footer class="footer">
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+    <p><i class="fa fa-location-arrow" style="color: #ffd700;"></i> A-65, ACME Co., Street No. 12, New York</p>
+    <p><i class="fa fa-phone" style="color: #ffd700;"></i>  +001-28272300-2466-2469  </p>
+    <p><i class="fa fa fa-envelope" style="color: #ffd700;"></i> webmaster@cellinfo.com  </p>
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Phones</h5>
+    <!--headin5_amrc-->
+    <ul class="footer_ul_amrc">
+    <li><a style="font-weight: 900; text-decoration: underline;" href="http://webenlance.com">Android</a></li>
+    <li><a href="http://webenlance.com">Samsung</a></li>
+    <li><a href="http://webenlance.com">Redmi</a></li>
+    <li><a href="http://webenlance.com">One Plus</a></li>
+    <li><a href="http://webenlance.com">Nokia</a></li>
+    <li><a href="http://webenlance.com">Google Pixels</a></li>
+    <li><a style="font-weight: 900; text-decoration: underline;" href="http://webenlance.com">iOS</a></li>
+    <li><a href="http://webenlance.com">IPhone</a></li>
+    <li><a href="http://webenlance.com">IPad</a></li>
+    <li><a href="http://webenlance.com">IPod</a></li>
+    </ul>
+    </div>
+    
+    
+    <div class=" col-sm-4 col-md  col-6 col">
+    <h5 class="headin5_amrc col_white_amrc pt2">Compare</h5>
+    <ul class="footer_ul_amrc">
+    <li><a href="http://webenlance.com">Clicke Here To Compare</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="home.html" style="color: #ffd700;">Home</a></li>
+    <li><a href="about.html" style="color: #ffd700;">About</a></li>
+    <li><a href="contact.html" style="color: #ffd700;">Contact Us</a></li>
+    <li><a href="#" style="color: #ffd700;">Phones</a></li>
+    </ul>
+    
+    </div>
+    </footer>
 <script src="../Assests/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="../Assests/js/contact.js"></script>
 </body>

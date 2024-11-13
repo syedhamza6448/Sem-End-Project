@@ -20,13 +20,13 @@ header{
     z-index:123;
     padding:10px;
     font:18px verdana;
-    color:#6DDB07;
+    color:#1c1c1c;
     float:left;
     width:15%;
     margin-right: 70px;
 }
 .logo a{
-    color:#6DDB07;
+    color:#1c1c1c;
 }
 .brandName {
     color: #FFD700;
@@ -775,5 +775,31 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
         align-items: center;
         margin-left: 100px;
         margin-bottom: 50px;
+    }
+    .logo {
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+    }
+    .brandName {
+        margin-left: 10px;
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .brandName p{
+        font-size: 20px;
+    }
+    .sig::after, .sig::before {
+        content: ".   ";
+        font-size: 4px;
+    }
+    .logo a img {
+        /* display: none; */
+        margin-top: 15px;
+        margin-left: 10px;
+        height: 30px;
+        width: 30px;
     }
 }   
