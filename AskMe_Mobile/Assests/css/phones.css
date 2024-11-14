@@ -1,28 +1,8 @@
-body {
-    background-color: #000;
-    color: #fff;
-}
-
-h2 {
-    color: gold;
-}
-
-.btn-primary {
-    background-color: gold;
-    border: none;
-}
-
-.btn-primary:hover {
-    background-color: #FFD700; /* Lighter gold on hover */
-}
 *{
     margin:0;
     padding:0;
     text-decoration:none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-body {
-    background-color: #1c1c1c;
 }
 header{
     position:relative;
@@ -37,13 +17,13 @@ header{
     z-index:123;
     padding:10px;
     font:18px verdana;
-    color:#6DDB07;
+    color:#1c1c1c;
     float:left;
     width:15%;
     margin-right: 70px;
 }
 .logo a{
-    color:#6DDB07;
+    color:#1c1c1c;
 }
 .brandName {
     color: #FFD700;
@@ -412,235 +392,6 @@ nav{
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{
     border-top:none
 }
-}
-#cssmenu {
+.active {
     background-color: #1c1c1c;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-
-}
-
-
-.group {
-    position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-   }
-   
-   .input {
-    font-size: 16px;
-    padding: 10px 10px 10px 5px;
-    display: block;
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #515151;
-    background: transparent;
-    color: #FDFDFD;
-   }
-   
-   .input:focus {
-    outline: none;
-   }
-   
-   label {
-    color: #999;
-    font-size: 18px;
-    font-weight: normal;
-    position: absolute;
-    pointer-events: none;
-    left: 5px;
-    top: 10px;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-   }
-   
-   .input:focus ~ label, .input:valid ~ label {
-    top: -20px;
-    font-size: 14px;
-    color: #FFD700
-}
-
-.bar {
-    position: relative;
-    display: block;
-    width: 200px;
-    width: 100%;
-   }
-   
-   .bar:before, .bar:after {
-    content: '';
-    height: 2px;
-    width: 0;
-    bottom: 1px;
-    position: absolute;
-    background: #FFD700;
-    transition: 0.2s ease all;
-    -moz-transition: 0.2s ease all;
-    -webkit-transition: 0.2s ease all;
-   }
-   
-   .bar:before {
-    left: 50%;
-   }
-   
-   .bar:after {
-    right: 50%;
-   }
-   
-   .input:focus ~ .bar:before, .input:focus ~ .bar:after {
-    width: 50%;
-   }
-   
-   .highlight {
-    position: absolute;
-    height: 60%;
-    width: 100px;
-    top: 25%;
-    left: 0;
-    pointer-events: none;
-    opacity: 0.5;
-   }
-   
-   .input:focus ~ .highlight {
-    animation: inputHighlighter 0.3s ease;
-   }
-   
-   @keyframes inputHighlighter {
-    from {
-     background: #5264AE;
-    }
-   
-    to {
-     width: 0;
-     background: transparent;
-    }
-   }
-
-button {
-    height: 50px;
-    width: 100px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    background: rgb(45, 45, 45);
-    font-family: "Montserrat", sans-serif;
-    overflow: hidden;
-    cursor: pointer;
-    border: none;
-    margin-bottom: 200px;
-}
-button:hover {
-    box-shadow: 5px 5px 20px #FFD700;
-    transition: 0.3s;
-    
-}
-
-button:after {
-    content: " ";
-    width: 0%;
-    height: 100%;
-    background: #FFD700;
-    position: absolute;
-    transition: all 0.4s ease-in-out;
-    right: 0;
-}
-
-button:hover::after {
-    right: auto;
-    left: 0;
-    width: 100%;
-}
-
-    button span {
-    text-align: center;
-    color: rgb(191, 190, 190);
-    text-decoration: none;
-    width: 100%;
-    padding: 18px 10px;
-    font-size: 13px;
-    font-weight: 700;
-    letter-spacing: 0.3em;
-    z-index: 20;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  button:hover span {
-    color: #183153;
-    animation: scaleUp 0.3s ease-in-out;
-  }
-  
-  @keyframes scaleUp {
-    0% {
-      transform: scale(1);
-    }
-  
-    50% {
-      transform: scale(0.95);
-    }
-  
-    100% {
-      transform: scale(1);
-    }
-  }
-  .col_white_amrc { color:#FFF;}
-footer { width:100%; background-color:#1c1c1c; min-height:250px; padding:10px 0px 25px 0px ;}
-.pt2 { padding-top:40px ; margin-bottom:20px ;}
-footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
-.mb10 { padding-bottom:15px ;}
-.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
-.footer_ul_amrc li {padding:0px 0px 5px 0px;}
-.footer_ul_amrc li a{ color:#CCC;}
-.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
-.fleft { float:left;}
-.padding-right { padding-right:10px; }
-
-.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
-.footer_ul2_amrc li p { display:table; }
-.footer_ul2_amrc li a:hover { text-decoration:none;}
-.footer_ul2_amrc li i { margin-top:5px;}
-
-.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
-.foote_bottom_ul_amrc {
-	list-style-type:none;
-	padding:0px;
-	display:table;
-	margin-top: 10px;
-	margin-right: auto;
-	margin-bottom: 10px;
-	margin-left: auto;
-}
-.foote_bottom_ul_amrc li { display:inline;}
-.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
-footer {
-    border-top: 1px solid gray;
-}
-header {
-    border-bottom: 1px solid gray;
-}
-@media screen and (max-width:767px) {
-    .brandName {
-        margin-left: 10px;
-        display: flex;
-        justify-content: start;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-    .brandName p{
-        font-size: 20px;
-    }
-    .sig::after, .sig::before {
-        content: ".   ";
-        font-size: 4px;
-    }
-    .logo a img {
-        margin-top: 15px;
-        margin-left: 10px;
-        height: 30px;
-        width: 30px;
-    }
-}
+}}

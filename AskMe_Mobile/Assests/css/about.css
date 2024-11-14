@@ -559,6 +559,31 @@ nav{
 #cssmenu > ul > li.has-sub > ul > li.active > a,#cssmenu > ul ul > li.has-sub > ul > li.active > a{
     border-top:none
 }
+.logo {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+.brandName {
+    margin-left: 10px;
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.brandName p{
+    font-size: 20px;
+}
+.sig::after, .sig::before {
+    content: ".   ";
+    font-size: 4px;
+}
+.logo a img {
+    margin-top: 15px;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+}
 }
 #cssmenu {
     background-color: #1c1c1c;
