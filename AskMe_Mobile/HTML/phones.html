@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Phones</title>
+    <title>Phones</title>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- For Animations -->
@@ -40,7 +40,7 @@
         <ul style="z-index: 123;">
         <li><a href='home.html'>HOME</a></li>
         <li><a href='about.html'>ABOUT</a></li>
-        <li><a href='#'>COMPARE</a></li>
+        <li><a href='compare.html'>COMPARE</a></li>
         <li class='active'><a href='phones.html'>PHONES</a>
            <ul>
               <li style="background-color: #ffd700;"><a style="background-color: #ffd700;" href='#'>iOS</a>
@@ -67,7 +67,86 @@
         </header>
 
         <section class="container-fluid sortFilter"></section>
-        <div class="phone-container container-fluid d-lg-flex d-sm-block mt-5">
+        <div class="container-fluid mt-5">
+         <div class="row">
+            <script>
+               cards = [
+                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
+                   title: "S24 Ultra",
+                   ram: "16",
+                   rom: "256 GB ROM",
+                   battery: "6000 MAH",  
+                   id: 1
+                  },
+                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
+                   title: "S26 Ultra",
+                   ram: "8GB RAM",
+                   rom: "256 GB ROM",
+                   battery: "6000 MAH",  
+                   id: 2
+                  },
+                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
+                   title: "S24 Ultra",
+                   ram: "8GB RAM",
+                   rom: "256 GB ROM",
+                   battery: "6000 MAH",  
+                   id: 3
+                  },
+                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
+                   title: "S24 Ultra",
+                   ram: "8GB RAM",
+                   rom: "256 GB ROM",
+                   battery: "6000 MAH",  
+                   id: 4
+                  },
+                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
+                   title: "S24 Ultra",
+                   ram: "8GB RAM",
+                   rom: "256 GB ROM",
+                   battery: "6000 MAH",  
+                   id: 5
+                  },
+               ]
+      
+               cards.forEach(function(cards){
+                  document.write(`
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                  <div class="flip-card col mb-5">
+                     <div class="flip-card-inner">
+                        <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
+                           <img class="img-fluid" src="${cards.img}" alt="">
+                              <p class="title">${cards.title}</p>
+                        </div>
+                        <div class="flip-card-back">
+                           <div class="d-flex flex-column justify-content-center align-items-center">
+                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                 <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                 <p style="font-size: 1.5em;">${cards.ram} GB RAM</p>
+                              </div>
+                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                 <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                 <p style="font-size: 1.5em;">256 GB ROM</p>
+                              </div>
+                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                 <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                 <p style="font-size: 1.5em;">5000 MAH</p>
+                              </div>
+                              <a href="../HTML/samsumgdetail.html=?id${cards.id}" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                   </div>
+                  `)
+               })
+              </script>  
+         </div>
+        </div>
+
+       
+        
+        
+        <!-- <div class="phone-container container-fluid d-lg-flex d-sm-block mt-5">
             <div class="flip-card col mb-5">
                <div class="flip-card-inner">
                   <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
@@ -88,7 +167,33 @@
                            <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
                            <p style="font-size: 1.5em;">5000 MAH</p>
                         </div>
-                        <a href="" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
+                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            </div> -->
+            <!-- <div class="flip-card col mb-5">
+               <div class="flip-card-inner">
+                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
+                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
+                        <p class="title">S24 Ultra</p>
+                  </div>
+                  <div class="flip-card-back">
+                     <div class="d-flex flex-column justify-content-center align-items-center">
+                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                           <p style="font-size: 1.5em;">8 GB RAM</p>
+                        </div>
+                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                           <p style="font-size: 1.5em;">256 GB ROM</p>
+                        </div>
+                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                           <p style="font-size: 1.5em;">5000 MAH</p>
+                        </div>
+                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
                      </div>
                   </div>
                </div>
@@ -113,7 +218,7 @@
                            <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
                            <p style="font-size: 1.5em;">5000 MAH</p>
                         </div>
-                        <a href="" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
+                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
                      </div>
                   </div>
                </div>
@@ -138,36 +243,11 @@
                            <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
                            <p style="font-size: 1.5em;">5000 MAH</p>
                         </div>
-                        <a href="" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
+                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
                      </div>
                   </div>
                </div>
-            </div>
-            <div class="flip-card col mb-5">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
-                        <p class="title">S24 Ultra</p>
-                  </div>
-                  <div class="flip-card-back">
-                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">8 GB RAM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">256 GB ROM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">5000 MAH</p>
-                        </div>
-                        <a href="" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            </div> -->
          </div>
         <script src="../Assests/js/phones.js"></script>
 </body>
