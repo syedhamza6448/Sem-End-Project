@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Phones</title>
+    <title>All Phones</title>
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <!-- For Animations -->
@@ -65,190 +65,536 @@
         </ul>
         </nav>
         </header>
-
+        
         <section class="container-fluid sortFilter"></section>
+        <br>
+        <h1 style="color: #ffd700; margin-top: 1em; text-align: center;">All Phones</h1>
+        <br>
         <div class="container-fluid mt-5">
-         <div class="row">
-            <script>
-               cards = [
-                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
-                   title: "S24 Ultra",
-                   ram: "16",
-                   rom: "256 GB ROM",
-                   battery: "6000 MAH",  
-                   id: 1
-                  },
-                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
-                   title: "S26 Ultra",
-                   ram: "8GB RAM",
-                   rom: "256 GB ROM",
-                   battery: "6000 MAH",  
-                   id: 2
-                  },
-                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
-                   title: "S24 Ultra",
-                   ram: "8GB RAM",
-                   rom: "256 GB ROM",
-                   battery: "6000 MAH",  
-                   id: 3
-                  },
-                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
-                   title: "S24 Ultra",
-                   ram: "8GB RAM",
-                   rom: "256 GB ROM",
-                   battery: "6000 MAH",  
-                   id: 4
-                  },
-                  {img: "https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714",
-                   title: "S24 Ultra",
-                   ram: "8GB RAM",
-                   rom: "256 GB ROM",
-                   battery: "6000 MAH",  
-                   id: 5
-                  },
-               ]
-      
-               cards.forEach(function(cards){
-                  document.write(`
-                    <div class="col-lg-3 col-md-6 col-sm-12">
-                  <div class="flip-card col mb-5">
-                     <div class="flip-card-inner">
-                        <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                           <img class="img-fluid" src="${cards.img}" alt="">
+            <div class="row">
+               <script>
+                  cards = [
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png",
+                        title: "Pixel 7 Pro",
+                        brand: "Google Pixels",
+                        display: "6.7",  
+                        rom: "128/256",
+                        ram: "8/12",
+                        battery: "5000",  
+                        id: 1,
+                     },
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 7a/Pixel 7a.jpg",
+                        title: "Pixel 7a",
+                        brand: "Google Pixels",
+                        display: "6.1",  
+                        rom: "128",
+                        ram: "8",
+                        battery: "4385",  
+                        id: 2,
+                     },
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 8 Pro/Pixel 8Pro.png",
+                        title: "Pixel 8 Pro",
+                        brand: "Google Pixels",
+                        display: "6.7",  
+                        rom: "128/256",
+                        ram: "12",
+                        battery: "5050",  
+                        id: 3,
+                     },
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 8a/Pixel 8a.png",
+                        title: "Pixel 8a",
+                        brand: "Google Pixels",
+                        display: "6.1",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "4492",  
+                        id: 4,
+                     },
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 9 Pro/Pixel 9Pro.webp",
+                        title: "Pixel 9 Pro",
+                        brand: "Google Pixels",
+                        display: "6.3",  
+                        rom: "128/256",
+                        ram: "16",
+                        battery: "4700",  
+                        id: 5,
+                     },
+                     {
+                        img: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/Pixel 9ProFold.png",
+                        title: "Pixel 9 Pro Fold",
+                        brand: "Google Pixels",
+                        display: "8.0",  
+                        rom: "256/512",
+                        ram: "16",
+                        battery: "4650",  
+                        id: 6,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Apple iPad mini (2019)/Apple iPad mini (2019).png",
+                        title: "iPad mini (2019)",
+                        brand: "Apple-Ipad",
+                        display: "7.9",  
+                        rom: "64/256",
+                        ram: "3",
+                        battery: "5124",  
+                        id: 7,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Apple iPad mini (2024)/Apple iPad mini (2024).png",
+                        title: "iPad mini (2024)",
+                        brand: "Apple-Ipad",
+                        display: "8.3",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "5078",  
+                        id: 8,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Ipad 10/Ipad 10.png",
+                        title: "iPad 10",
+                        brand: "Apple-Ipad",
+                        display: "10.9",  
+                        rom: "64/256",
+                        ram: "4",
+                        battery: "7606",  
+                        id: 9,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Ipad 10.2/Ipad 10.2.webp",
+                        title: "iPad 10.2",
+                        brand: "Apple-Ipad",
+                        display: "10.2",  
+                        rom: "64/256",
+                        ram: "3",
+                        battery: "8557",  
+                        id: 10,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Ipad Air 13/Ipad Air 13.png",
+                        title: "Ipad Air 13",
+                        brand: "Apple-Ipad",
+                        display: "13.0",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "9705",  
+                        id: 11,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
+                        title: "Ipad Pro 13",
+                        brand: "Apple-Ipad",
+                        display: "13.0",  
+                        rom: "256/512",
+                        ram: "8/16",
+                        battery: "10290",  
+                        id: 12,
+                     },
+                     {
+                        img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
+                        title: "Ipad Pro 13",
+                        brand: "Apple-Ipad",
+                        display: "13.0",  
+                        rom: "256/512",
+                        ram: "8/16",
+                        battery: "10290",  
+                        id: 13,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone 12/Iphone 12.png",
+                        title: "Iphone 12",
+                        brand: "Apple-Iphone",
+                        display: "6.1",  
+                        rom: "64/128",
+                        ram: "4",
+                        battery: "2815",  
+                        id: 14,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone 13/Iphone 13.png",
+                        title: "Iphone 13",
+                        brand: "Apple-Iphone",
+                        display: "6.1",  
+                        rom: "128/256",
+                        ram: "4",
+                        battery: "3240",  
+                        id: 15,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone 14 ProMax/Iphone 14 ProMax.png",
+                        title: "Iphone 14 Pro Max",
+                        brand: "Apple-Iphone",
+                        display: "6.7",  
+                        rom: "128/256",
+                        ram: "6",
+                        battery: "4323",  
+                        id: 16,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone 15 Pro/Iphone 15 Pro.png",
+                        title: "Iphone 15 Pro",
+                        brand: "Apple-Iphone",
+                        display: "6.1",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "3274",  
+                        id: 17,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone 16 Pro/Iphone 16 Pro.png",
+                        title: "Iphone 16 Pro",
+                        brand: "Apple-Iphone",
+                        display: "6.3",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "3582",  
+                        id: 18,
+                     },
+                     {
+                        img: "../Assests/images/Iphone/Iphone X/Iphone X.png",
+                        title: "Iphone X",
+                        brand: "Apple-Iphone",
+                        display: "5.8",  
+                        rom: "64/256",
+                        ram: "3",
+                        battery: "2716",  
+                        id: 19,
+                     },
+                     {
+                        img: "../Assests/images/Ipod/iPod Touch 1/iPod Touch 1.png",
+                        title: "iPod Touch 1",
+                        brand: "Apple-Ipod",
+                        display: "3.5",  
+                        rom: "8/16/32",
+                        ram: "N/A",
+                        battery: "950",  
+                        id: 20,
+                     },
+                     {
+                        img: "../Assests/images/Ipod/iPod Touch 3/iPod Touch 3.png",
+                        title: "iPod Touch 3",
+                        brand: "Apple-Ipod",
+                        display: "3.5",  
+                        rom: "32/64",
+                        ram: "N/A",
+                        battery: "789",  
+                        id: 21,
+                     },
+                     {
+                        img: "../Assests/images/Ipod/iPod Touch 4/iPod Touch 4.png",
+                        title: "iPod Touch 4",
+                        brand: "Apple-Ipod",
+                        display: "3.5",  
+                        rom: "8/32/64",
+                        ram: "N/A",
+                        battery: "930",  
+                        id: 22,
+                     },
+                     {
+                        img: "../Assests/images/Ipod/iPod Touch 5/iPod Touch 5.webp",
+                        title: "iPod Touch 5",
+                        brand: "Apple-Ipod",
+                        display: "4.0",  
+                        rom: "32/64",
+                        ram: "N/A",
+                        battery: "1030",  
+                        id: 23,
+                     },
+                     {
+                        img: "../Assests/images/Ipod/iPod Touch 6/iPod Touch 6.png",
+                        title: "iPod Touch 6",
+                        brand: "Apple-Ipod",
+                        display: "4.0",  
+                        rom: "32/64",
+                        ram: "N/A",
+                        battery: "1043",  
+                        id: 24,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia 5.4/Nokia 5.4.png",
+                        title: "Nokia 5.4",
+                        brand: "Nokia",
+                        display: "6.39",  
+                        rom: "64/128",
+                        ram: "4/6",
+                        battery: "4000",  
+                        id: 25,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia 7 Plus/Nokia 7 Plus.png",
+                        title: "Nokia 7 Plus",
+                        brand: "Nokia",
+                        display: "6.0",  
+                        rom: "64",
+                        ram: "4/6",
+                        battery: "3800",  
+                        id: 26,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia 8.3 5G/Nokia 8.3 5G.png",
+                        title: "Nokia 8.3 5G",
+                        brand: "Nokia",
+                        display: "6.81",  
+                        rom: "64/128",
+                        ram: "6/8",
+                        battery: "4500",  
+                        id: 27,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia G42 5G Dual Sim/Nokia G42 5G.webp",
+                        title: "Nokia G42 5G",
+                        brand: "Nokia",
+                        display: "6.56",  
+                        rom: "128/256",
+                        ram: "4/8",
+                        battery: "5000",  
+                        id: 28,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia X30 Dual Sim 5G/Nokia X30.jpg",
+                        title: "Nokia X30",
+                        brand: "Nokia",
+                        display: "6.43",  
+                        rom: "128/256",
+                        ram: "6/8",
+                        battery: "4200",  
+                        id: 29,
+                     },
+                     {
+                        img: "../Assests/images/Nokia/Nokia XR21 5G/Nokia XR21 5G.png",
+                        title: "Nokia XR21 5G",
+                        brand: "Nokia",
+                        display: "6.49",  
+                        rom: "128",
+                        ram: "6",
+                        battery: "4800",  
+                        id: 30,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/One Plus 11/One Plus 11.png",
+                        title: "One Plus 11",
+                        brand: "OnePlus",
+                        display: "6.7",  
+                        rom: "128/256",
+                        ram: "8-16",
+                        battery: "5000",  
+                        id: 31,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/One Plus Nord CE 3 Lite 5G/One Plus Nord CE 3 Lite 5G.png",
+                        title: "One Plus Nord CE 3 Lite 5G",
+                        brand: "OnePlus",
+                        display: "6.72",  
+                        rom: "128/256",
+                        ram: "8",
+                        battery: "5000",  
+                        id: 32,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/One Plus Nord CE 4 Lite 5G/One Plus Nord CE 4 Lite 5G.png",
+                        title: "One Plus Nord CE 4 Lite 5G",
+                        brand: "OnePlus",
+                        display: "6.67",  
+                        rom: "256",
+                        ram: "8",
+                        battery: "5110",  
+                        id: 33,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/One Plus Open/One Plus Open.png",
+                        title: "One Plus Open",
+                        brand: "OnePlus",
+                        display: "7.82",  
+                        rom: "1 TB/512",
+                        ram: "16",
+                        battery: "4805",  
+                        id: 34,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/OnePlus 12/OnePlus 12.png",
+                        title: "OnePlus 12",
+                        brand: "OnePlus",
+                        display: "6.82",  
+                        rom: "256/512",
+                        ram: "12-24",
+                        battery: "5400",  
+                        id: 35,
+                     },
+                     {
+                        img: "../Assests/images/OnePlus/OnePlus 12R/OnePlus 12R.png",
+                        title: "OnePlus 12R",
+                        brand: "OnePlus",
+                        display: "6.78",  
+                        rom: "128/256",
+                        ram: "8-16",
+                        battery: "5500",  
+                        id: 36,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Note 13/Note 13.png",
+                        title: "Note 13",
+                        brand: "Redmi",
+                        display: "6.67",  
+                        rom: "128/256",
+                        ram: "6-12",
+                        battery: "5000",  
+                        id: 37,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Note 13 Pro/Note 13 Pro.png",
+                        title: "Note 13 Pro",
+                        brand: "Redmi",
+                        display: "6.67",  
+                        rom: "128/256",
+                        ram: "8-16",
+                        battery: "5100",  
+                        id: 38,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Redmi 12/Redmi 12.webp",
+                        title: "Redmi 12",
+                        brand: "Redmi",
+                        display: "6.79",  
+                        rom: "128/256",
+                        ram: "2-8",
+                        battery: "5000",  
+                        id: 39,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Redmi 13/Redmi 13.png",
+                        title: "Redmi 13",
+                        brand: "Redmi",
+                        display: "6.79",  
+                        rom: "128/256",
+                        ram: "6/8",
+                        battery: "5030",  
+                        id: 40,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Redmi Note 8/Redmi Note 8.png",
+                        title: "Redmi Note 8",
+                        brand: "Redmi",
+                        display: "6.3",  
+                        rom: "32/64",
+                        ram: "3-6",
+                        battery: "4000",  
+                        id: 41,
+                     },
+                     {
+                        img: "../Assests/images/Redmi/Redmi Note 11/Redmi Note 11.webp",
+                        title: "Redmi Note 11",
+                        brand: "Redmi",
+                        display: "6.43",  
+                        rom: "64/128",
+                        ram: "4/6",
+                        battery: "5000",  
+                        id: 42,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/Galaxy Z Flip/Galaxy Z Flip.png",
+                        title: "Galaxy Z Flip",
+                        brand: "Samsung",
+                        display: "6.7",  
+                        rom: "256",
+                        ram: "8",
+                        battery: "3300",  
+                        id: 43,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/Galaxy Z Fold 4/Galaxy Z Fold 4.png",
+                        title: "Galaxy Z Fold 4",
+                        brand: "Samsung",
+                        display: "7.6",  
+                        rom: "256/512",
+                        ram: "12",
+                        battery: "4400",  
+                        id: 44,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/Galaxy Z Fold 5/Galaxy Z Fold 5.png",
+                        title: "Galaxy Z Fold 5",
+                        brand: "Samsung",
+                        display: "7.6",  
+                        rom: "256/512",
+                        ram: "12",
+                        battery: "4400",  
+                        id: 45,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/Galaxy Z Fold 6/Galaxy Z Fold 6.png",
+                        title: "Galaxy Z Fold 6",
+                        brand: "Samsung",
+                        display: "7.6",  
+                        rom: "256/512",
+                        ram: "12",
+                        battery: "4400",  
+                        id: 46,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/S23 Ultra/S23 Ultra.webp",
+                        title: "S23 Ultra",
+                        brand: "Samsung",
+                        display: "6.8",  
+                        rom: "256/512",
+                        ram: "8/12",
+                        battery: "5000",  
+                        id: 47,
+                     },
+                     {
+                        img: "../Assests/images/Samsung/S24 Ultra/S24 Ultra.png",
+                        title: "S24 Ultra",
+                        brand: "Samsung",
+                        display: "6.8",  
+                        rom: "256/512",
+                        ram: "12",
+                        battery: "5000",  
+                        id: 48,
+                     },
+                  ]
+         
+                  cards.forEach(function(cards){
+                     document.write(`
+                     <div class="col-lg-3 col-md-6 col-sm-12">
+                     <div class="flip-card col mb-5">
+                        <div class="flip-card-inner">
+                           <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
+                              <img class="img-fluid" src="${cards.img}" alt="">
                               <p class="title">${cards.title}</p>
-                        </div>
-                        <div class="flip-card-back">
-                           <div class="d-flex flex-column justify-content-center align-items-center">
-                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                                 <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                                 <p style="font-size: 1.5em;">${cards.ram} GB RAM</p>
+                              <p class="brand">${cards.brand}</p>
                               </div>
-                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                                 <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                                 <p style="font-size: 1.5em;">256 GB ROM</p>
+                              <div class="flip-card-back">
+                                 <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                       <i class="fa-solid fa-mobile" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                       <p style="font-size: 1.5em;">${cards.display}" Inch Display</p>
+                                    </div>
+                                    <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                       <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                       <p style="font-size: 1.5em;">${cards.rom} GB ROM</p>
+                                       </div>
+                                    <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                       <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                       <p style="font-size: 1.5em;">${cards.ram} GB RAM</p>
+                                    </div>
+                                    <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
+                                       <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
+                                       <p style="font-size: 1.5em;">${cards.battery} mAh</p>
+                                    </div>
+                                 <a href="../HTML/samsumgdetail.html=?id${cards.id}" style="margin-top: 2em; color: #1c1c1c;">Click Here To Get More Details</a>
                               </div>
-                              <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                                 <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                                 <p style="font-size: 1.5em;">5000 MAH</p>
-                              </div>
-                              <a href="../HTML/samsumgdetail.html=?id${cards.id}" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
                            </div>
                         </div>
                      </div>
-                  </div>
-                   </div>
-                  `)
-               })
-              </script>  
-         </div>
+                     </div>
+                     `)
+                  })
+               </script>  
+            </div>
         </div>
-
-       
-        
-        
-        <!-- <div class="phone-container container-fluid d-lg-flex d-sm-block mt-5">
-            <div class="flip-card col mb-5">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
-                        <p class="title">S24 Ultra</p>
-                  </div>
-                  <div class="flip-card-back">
-                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">8 GB RAM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">256 GB ROM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">5000 MAH</p>
-                        </div>
-                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            </div> -->
-            <!-- <div class="flip-card col mb-5">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
-                        <p class="title">S24 Ultra</p>
-                  </div>
-                  <div class="flip-card-back">
-                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">8 GB RAM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">256 GB ROM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">5000 MAH</p>
-                        </div>
-                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="flip-card col mb-5">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
-                        <p class="title">S24 Ultra</p>
-                  </div>
-                  <div class="flip-card-back">
-                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">8 GB RAM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">256 GB ROM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">5000 MAH</p>
-                        </div>
-                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="flip-card col mb-5">
-               <div class="flip-card-inner">
-                  <div class="flip-card-front col-12 d-flex flex-column justify-content-center align-items-center">
-                     <img class="col-9" src="https://images.samsung.com/is/image/samsung/p6pim/pk/sm-s928bzkcpkd/gallery/pk-galaxy-s24-s928-489293-sm-s928bzkcpkd-thumb-539796714" alt="">
-                        <p class="title">S24 Ultra</p>
-                  </div>
-                  <div class="flip-card-back">
-                     <div class="d-flex flex-column justify-content-center align-items-center">
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-memory" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">8 GB RAM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-database" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">256 GB ROM</p>
-                        </div>
-                        <div class="specs d-flex flex-row align-items-center justify-content-center gap-3">
-                           <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
-                           <p style="font-size: 1.5em;">5000 MAH</p>
-                        </div>
-                        <a href="../HTML/detail.html" style="margin-top: 3em; color: #1c1c1c;">Click Here To Get More Details</a>
-                     </div>
-                  </div>
-               </div>
-            </div> -->
-         </div>
         <script src="../Assests/js/phones.js"></script>
 </body>
 </html>
