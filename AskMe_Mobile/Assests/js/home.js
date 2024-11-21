@@ -1,5 +1,10 @@
+$('#toggle').click(function(){
+  $(this).toggleClass('on');
+  $('.navbar').toggleClass('bg-white')
+});
+
 (function($) {
-    $.fn.menumaker = function(options) {  
+     $.fn.menumaker = function(options) {  
      var cssmenu = $(this), settings = $.extend({
        format: "dropdown",
        sticky: false

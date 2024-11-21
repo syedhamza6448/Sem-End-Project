@@ -24,52 +24,83 @@
   <!-- Own -->
   <link rel="stylesheet" href="../Assests/css/home.css">
   <link rel="icon" href="../Assests/images/Logo-cropped.png">
+  <style>
 
+  </style>
 
 </head>
 
 <body style="background-color: #1c1c1c;">
-  <header style="border-bottom: 1px solid gray;">
+  <header style="border-bottom: 1px solid transparent;">
     <nav id='cssmenu'>
-        <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png"
-                    height="30%" width="30%"></a>
-            <div class="brandName">
-                <p>Ask Me</p>
-                <p class="sig">Ltd.</p>
-            </div>
+      <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png" height="30%"
+            width="30%"></a>
+        <div class="brandName">
+          <p>Ask Me</p>
+          <p class="sig">Ltd.</p>
         </div>
-        <div id="head-mobile"></div>
-        <div class="button"></div>
-        <ul style="z-index: 123;">
-            <li class='active'><a href='home.html'>HOME</a></li>
-            <li><a href='about.html'>ABOUT</a></li>
-            <li><a href='compare.html'>COMPARE</a></li>
-            <li><a href='phones.html'>PHONES</a>
-                <ul>
-                    <li><a href='ios.html'>iOS</a>
-                        <ul>
-                            <li><a href='ipod.html'>IPods</a></li>
-                            <li><a href='iphone.html'>IPhones</a></li>
-                            <li><a href='ipad.html'>IPads</a></li>
-                        </ul>
-                    </li>
-                    <li><a href='android.html'>Android</a>
-                        <ul>
-                            <li><a href='samsung.html'>Samsung</a></li>
-                            <li><a href='oneplus.html'>OnePlus+</a></li>
-                            <li><a href='pixel.html'>Google Pixels</a></li>
-                            <li><a href='nokia.html'>Nokia</a></li>
-                            <li><a href='redmi.html'>Redmi</a></li>
-                        </ul>
-                    </li>
-                </ul>
+      </div>
+      <div id="head-mobile"></div>
+      <div class="button"></div>
+      <ul style="z-index: 123;">
+        <li class='active'><a href='home.html'>HOME</a></li>
+        <li><a href='about.html'>ABOUT</a></li>
+        <li><a href='compare.html'>COMPARE</a></li>
+        <li><a href='phones.html'>PHONES</a>
+          <ul>
+            <li><a href='ios.html'>iOS</a>
+              <ul>
+                <li><a href='ipod.html'>IPods</a></li>
+                <li><a href='iphone.html'>IPhones</a></li>
+                <li><a href='ipad.html'>IPads</a></li>
+              </ul>
             </li>
-            <li><a href='contact.html'>CONTACT</a></li>
-        </ul>
+            <li><a href='android.html'>Android</a>
+              <ul>
+                <li><a href='samsung.html'>Samsung</a></li>
+                <li><a href='oneplus.html'>OnePlus+</a></li>
+                <li><a href='pixel.html'>Google Pixels</a></li>
+                <li><a href='nokia.html'>Nokia</a></li>
+                <li><a href='redmi.html'>Redmi</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href='contact.html'>CONTACT</a></li>
+      </ul>
     </nav>
-</header>
+  </header>
 
-  <h1 class="feature">Featured Phones</h1>
+    <div class="i-hero-header"
+      style="height: 90vh;" >
+
+
+      <div class="i-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="iframe-container">
+                <img src="../Assests/images/Carousel-Img1.webp" alt="">
+              </div>
+            </div>
+            <div class="col-md-6  offset-md-1">
+              <h2 class="display-2 color-white" style="color: #ffd700; font-size: 40px;">Compare Phones</h2>
+              <h5 class="title1 color-white" style="color: #fdfdfd; font-size: 20px;">Our website provide you the feature to compare your phones so you could find the Perfect Mobile for yourself by comparing features, performances at a Glance.</h5>
+              <br>
+              <a href="compare.html" target="_blank"
+                class="btn btn-warning button color-dark gayab">
+                Compare Here 
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h1 class="mt-5 feature" style="font-size: 48px; text-align: center;">Featured Phones</h1>
   <swiper-container class="featured-img mySwiper" pagination="false" effect="coverflow" grab-cursor="true"
     centered-slides="true" slides-per-view="auto" coverflow-effect-rotate="90" coverflow-effect-stretch="0"
     coverflow-effect-depth="100" coverflow-effect-modifier="1" coverflow-effect-slide-shadows="true">

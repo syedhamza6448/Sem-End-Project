@@ -36,45 +36,58 @@
 <body>
    <header style="border-bottom: 1px solid gray;">
       <nav id='cssmenu'>
-          <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png"
-                      height="30%" width="30%"></a>
-              <div class="brandName">
-                  <p>Ask Me</p>
-                  <p class="sig">Ltd.</p>
-              </div>
-          </div>
-          <div id="head-mobile"></div>
-          <div class="button"></div>
-          <ul style="z-index: 123;">
-              <li><a href='home.html'>HOME</a></li>
-              <li><a href='about.html'>ABOUT</a></li>
-              <li><a href='compare.html'>COMPARE</a></li>
-              <li class='active'><a href='phones.html'>PHONES</a>
-                  <ul>
-                      <li><a href='ios.html'>iOS</a>
-                          <ul>
-                              <li><a href='ipod.html'>IPods</a></li>
-                              <li><a href='iphone.html'>IPhones</a></li>
-                              <li><a href='ipad.html'>IPads</a></li>
-                          </ul>
-                      </li>
-                      <li><a href='android.html'>Android</a>
-                          <ul>
-                              <li><a href='samsung.html'>Samsung</a></li>
-                              <li><a href='oneplus.html'>OnePlus+</a></li>
-                              <li><a href='pixel.html'>Google Pixels</a></li>
-                              <li><a href='nokia.html'>Nokia</a></li>
-                              <li><a href='redmi.html'>Redmi</a></li>
-                          </ul>
-                      </li>
-                  </ul>
-              </li>
-              <li><a href='contact.html'>CONTACT</a></li>
-          </ul>
+         <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png"
+                  height="30%" width="30%"></a>
+            <div class="brandName">
+               <p>Ask Me</p>
+               <p class="sig">Ltd.</p>
+            </div>
+         </div>
+         <div id="head-mobile"></div>
+         <div class="button"></div>
+         <ul style="z-index: 123;">
+            <li><a href='home.html'>HOME</a></li>
+            <li><a href='about.html'>ABOUT</a></li>
+            <li><a href='compare.html'>COMPARE</a></li>
+            <li class='active'><a href='phones.html'>PHONES</a>
+               <ul>
+                  <li><a href='ios.html'>iOS</a>
+                     <ul>
+                        <li><a href='ipod.html'>IPods</a></li>
+                        <li><a href='iphone.html'>IPhones</a></li>
+                        <li><a href='ipad.html'>IPads</a></li>
+                     </ul>
+                  </li>
+                  <li><a href='android.html'>Android</a>
+                     <ul>
+                        <li><a href='samsung.html'>Samsung</a></li>
+                        <li><a href='oneplus.html'>OnePlus+</a></li>
+                        <li><a href='pixel.html'>Google Pixels</a></li>
+                        <li><a href='nokia.html'>Nokia</a></li>
+                        <li><a href='redmi.html'>Redmi</a></li>
+                     </ul>
+                  </li>
+               </ul>
+            </li>
+            <li><a href='contact.html'>CONTACT</a></li>
+         </ul>
       </nav>
-  </header>
+   </header>
 
-   <section class="container-fluid sortFilter"></section>
+   <section class="container-fluid sortFilter d-flex justify-content-between align-items-center">
+      <h1 style="font-size: 2em;">Sort And Filter</h1>
+      <div class="dropdown">
+         <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            Sort by Brands
+         </button>
+         <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+            <li><a class="dropdown-item text-white" href="android.html">Android</a></li>
+            <li><a class="dropdown-item text-white" href="ios.html">iOS</a></li>
+         </ul>
+      </div>
+   </section>
+
    <br>
    <h1 style="color: #ffd700; margin-top: 1em; text-align: center;">All Phones</h1>
    <br>
@@ -592,7 +605,7 @@
                                        <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
                                        <p style="font-size: 1.5em;">${cards.battery} mAh</p>
                                     </div>
-                                 <a href="../HTML/samsumgdetail.html=?id${cards.id}" style="margin-top: 2em; color: #1c1c1c;">Click Here To Get More Details</a>
+                                 <a href="../HTML/phonesdetails.html?id=${cards.id}" style="margin-top: 2em; color: #1c1c1c;">Click Here To Get More Details</a>
                               </div>
                            </div>
                         </div>

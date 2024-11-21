@@ -792,6 +792,9 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
 .foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
 
 @media screen and (max-width:767px) {
+    .gayab {
+        display: none
+    }
     #opacity {
         flex-direction: column;
     }
@@ -822,3 +825,408 @@ footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
         width: 30px;
     }
 }   
+.wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    place-items: center;
+  }
+  
+  #title {
+    font-size: 48px;
+  }
+  
+  #title,
+  #desc {
+    color: #fff;
+    font-family: sans-serif;
+  }
+  
+  .particletext {
+    position: relative;
+    color: transparent;
+    font-weight: 800;
+    background-color: #1e80db !important;
+    background-position: 50% 50%;
+    background-image: url(../images/Carousel-Img.webp) repeat-y;
+    /* animation: slide 2s linear infinite; */
+  }
+  
+  @keyframes slide {
+    0% {
+        background-image: url(../images/Carousel-Img2.webp)
+    }
+    50% {
+        background-image: url(../images/Carousel-Img3.webp)
+    }
+    100% {
+        background-image: url(../images/Carousel-Img4.webp)
+    }
+  }
+  /* Basic styles */
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,500,300italic,500italic,700italic,900,300);
+/* -- Box model ------------------------------- */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 62.5%; */
+}
+html.text-large {
+  /* font-size: 75%; */
+}
+html.text-small {
+  /* font-size: 50%; */
+}
+body {
+  /* font-family: "Roboto", 'Helvetica Neue, Helvetica, Arial'; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+/* Demo style */
+body {
+  padding: 0;
+  margin: 0;
+}
+/* Material Design Typography */
+.display-4 {
+  font-size: 112px;
+  font-size: 11.2rem;
+  line-height: 128px;
+  line-height: 12.8rem;
+  letter-spacing: -0.1px;
+  letter-spacing: -0.01rem;
+  font-weight: 100;
+  color: #757575;
+  text-transform: inherit;
+}
+.display-3 {
+  font-size: 56px;
+  font-size: 5.6rem;
+  line-height: 84px;
+  line-height: 8.4rem;
+  letter-spacing: -0.05px;
+  letter-spacing: -0.005rem;
+  font-weight: 300;
+  color: #757575;
+  text-transform: inherit;
+}
+.display-2 {
+  font-size: 45px;
+  font-size: 4.5rem;
+  line-height: 48px;
+  line-height: 4.8rem;
+  letter-spacing: 0px;
+  letter-spacing: 0rem;
+  font-weight: 300;
+  color: #757575;
+  text-transform: inherit;
+}
+.display-1 {
+  font-size: 34px;
+  font-size: 3.4rem;
+  line-height: 40px;
+  line-height: 4rem;
+  letter-spacing: 0px;
+  letter-spacing: 0rem;
+  font-weight: 300;
+  color: #757575;
+  text-transform: inherit;
+}
+.headline {
+  font-size: 24px;
+  font-size: 2.4rem;
+  line-height: 32px;
+  line-height: 3.2rem;
+  letter-spacing: 0px;
+  letter-spacing: 0rem;
+  font-weight: 300;
+  color: #212121;
+  text-transform: inherit;
+}
+.title1 {
+  font-size: 20px;
+  font-size: 2rem;
+  line-height: 28px;
+  line-height: 2.8rem;
+  letter-spacing: 0.05px;
+  letter-spacing: 0.005rem;
+  font-weight: 400;
+  color: #212121;
+  text-transform: inherit;
+}
+.subhead-2 {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 28px;
+  line-height: 2.8rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  color: #212121;
+  text-transform: inherit;
+}
+.subhead-1 {
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 300;
+  color: #212121;
+  text-transform: inherit;
+}
+.body-2 {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 24px;
+  line-height: 2.4rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  color: #212121;
+  text-transform: inherit;
+}
+.body-1 {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 300;
+  color: #212121;
+  text-transform: inherit;
+}
+.caption {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  line-height: 2rem;
+  letter-spacing: 0.2px;
+  letter-spacing: 0.02rem;
+  font-weight: 300;
+  color: #757575;
+  text-transform: inherit;
+}
+.label {
+  font-size: 12px;
+  font-size: 1.2rem;
+  line-height: 20px;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 300;
+  color: #212121;
+  text-transform: inherit;
+}
+.menu {
+  font-size: 13px;
+  font-size: 1.3rem;
+  line-height: 20px;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  color: #212121;
+  text-transform: inherit;
+}
+.button {
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 20px;
+  line-height: 2rem;
+  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
+  font-weight: 400;
+  color: #212121;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 960px) {
+  .subhead-2 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .subhead-1 {
+    font-size: 16px;
+    font-size: 1.6rem;
+  }
+  .body-2 {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .body-1 {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+  .menu {
+    font-size: 14px;
+    font-size: 1.4rem;
+  }
+}
+.display-4,
+.display-3,
+.display-2,
+.display-1 {
+  margin: 0 0 14px 0;
+  margin-bottom: 1.4rem;
+}
+.headline,
+.title,
+.subhead-2,
+.subhead-1,
+.body-2,
+.body-1,
+.caption,
+.label,
+.menu,
+.button {
+  margin: 0 0 10px 0;
+  margin-bottom: 1rem;
+}
+.section{
+  min-height: 100vh;
+  position: relative;
+}
+.section-color{
+  background: #eaebec;
+}
+/* transparent navbar */
+.section .navbar{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.navbar {
+  background-color: transparent;
+  border: none;
+  color: white;
+  z-index: 100;
+  transition: all .36s ease;
+}
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff;
+}
+.bg-white{
+  background: #fff;
+}
+
+.bg-white.navbar-default .navbar-brand {
+    color: #777;
+}
+.bg-white.navbar-default .navbar-nav>li>a {
+    color: #777;
+}
+
+
+
+/* Important styles */
+#toggle {
+  display: block;
+  width: 30px;
+  height: 30px;
+  padding:0;
+  padding-top: 15px;
+    position: relative;
+    float: right;
+    margin-top: 8px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+  border: none;
+  cursor: pointer;
+}
+@media (min-width: 767px){
+  #toggle{
+    display: none
+  }
+}
+
+#toggle span:after,
+#toggle span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+#toggle span:after{
+  top: 9px;
+}
+#toggle span {
+  position: relative;
+  display: block;
+}
+
+#toggle span,
+#toggle span:after,
+#toggle span:before {
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+}
+.bg-white #toggle span,
+.bg-white #toggle span:after,
+.bg-white #toggle span:before{
+  background: #777;
+}
+/* on activation */
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+/* iheroheader */
+.i-hero-header{
+  height: 100vh;
+  background-size: cover;
+  position: relative;
+}
+.i-hero-header:before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.37);
+}
+.i-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+}
+.iframe-container img {
+    width: 100%;
+      box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.56), 0 4px 25px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.color-white{
+  color: #fff;
+}
+.i-hero-header {
+    background-position: center;
+    animation: slide 20s linear infinite;   
+}

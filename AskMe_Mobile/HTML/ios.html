@@ -74,7 +74,28 @@
       </nav>
   </header>
 
-   <section class="container-fluid sortFilter"></section>
+  <section class="container-fluid sortFilter d-flex justify-content-between align-items-center gap-5">
+   <h1  class="fs-lg-1 fs-sm-6">Sort And Filter</h1>
+   <div class="dropdown gap-5">
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+         aria-expanded="false">
+         Sort by OS
+      </button>
+      <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+         <li><a class="dropdown-item text-white" href="phones.html">All Phones</a></li>
+         <li><a class="dropdown-item text-white" href="android.html">Android</a></li>
+      </ul>
+      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+         aria-expanded="false">
+         Sort by Brands
+      </button>
+      <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+         <li><a class="dropdown-item text-white" href="iphone.html">iPhones</a></li>
+         <li><a class="dropdown-item text-white" href="ipod.html">iPods</a></li>
+         <li><a class="dropdown-item text-white" href="ipad.html">iPads</a></li>
+      </ul>
+   </div>
+</section>
    <br>
    <h1 style="color: #ffd700; margin-top: 1em; text-align: center;">iOS Phones</h1>
    <br>
@@ -292,7 +313,7 @@
                                        <i class="fa-solid fa-battery-full" style="color: #1c1c1c; margin-bottom: 15px; font-size: 1.5em;"></i>
                                        <p style="font-size: 1.5em;">${cards.battery} mAh</p>
                                     </div>
-                                 <a href="../HTML/samsumgdetail.html=?id${cards.id}" style="margin-top: 2em; color: #1c1c1c;">Click Here To Get More Details</a>
+                                 <a href="../HTML/phonesdetails.html?id=${cards.id}" style="margin-top: 2em; color: #1c1c1c;">Click Here To Get More Details</a>
                               </div>
                            </div>
                         </div>
