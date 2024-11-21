@@ -557,7 +557,7 @@ button {
     overflow: hidden;
     cursor: pointer;
     border: none;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 button:hover {
     box-shadow: 5px 5px 20px #FFD700;
