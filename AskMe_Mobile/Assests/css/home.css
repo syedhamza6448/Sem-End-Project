@@ -7,11 +7,7 @@
 body {
     background-color: #1c1c1c;
 }
-header{
-    position:relative;
-    width:100%;
-    background:#1c1c1c;
-}
+
 .logo{
     display: flex;
     justify-content: center;
@@ -48,7 +44,7 @@ header{
     font-family: 'Courier New', Courier, monospace;
 }
 nav{
-    position:relative;
+    /* position:fixed; */
     width:980px;
     margin:0 auto;
 }
@@ -61,7 +57,7 @@ nav{
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
-    background-color: #1c1c1c;
+    background-color: rgba(28, 28, 28, 0.09);
 }
 #cssmenu:after,#cssmenu > ul:after{
     content:".";
@@ -76,7 +72,8 @@ nav{
 }
 #cssmenu{
     font-family:sans-serif;
-    background:#333
+    background:rgba(28, 28, 28, 0.09);
+    /* position: fixed; */
 }
 #cssmenu ul li:hover {
     background-color: #FFD700 !important;
@@ -470,8 +467,9 @@ swiper-container {
 #cssmenu {
     background-color: #1c1c1c;
     display: flex;
-    align-items: center;
+    align-items: normal;
     justify-content: center;
+    margin: 0;
 }
 .featured-img {
     background-color: #1c1c1c !important;
@@ -1229,4 +1227,19 @@ body {
 .i-hero-header {
     background-position: center;
     animation: slide 20s linear infinite;   
+}
+#cssmenu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    background-color: rgba(28, 28, 28, 0.671);
+    height: 10vh;
+}
+header{
+    position:sticky;
+    height: 10vh;
+    width:100%;
+    background:rgba(28, 28, 28, 0.71);
+    z-index: 1234;
 }

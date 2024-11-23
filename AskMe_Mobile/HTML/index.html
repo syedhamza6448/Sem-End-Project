@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Table Layout</title>
+  <!-- Bootstrap CSS -->
+  <!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet"> -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      color: #FDFDFD;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      margin-top: 4em;
+    }
+
+    .img-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+    }
+
+    #mainImage {
+      height: 40em;
+      width: 40em;
+      border: 1px solid #FDFDFD;
+    }
+
+    .sub-images {
+      display: flex;
+      flex-direction: row;
+      gap: .5em;
+      border: 2px solid #ffd700;
+      margin-top: 20px;
+    }
+
+    .sub-images img {
+      cursor: pointer;
+      height: 100px;
+      width: 100px;
+      /* border: 2px solid #ffd700; */
+    }
+
+    .tableArea {
+      width: 50%;
+      display: flex;
+      /* justify-content: center; */
+      align-items: center;
+      flex-direction: column;
+      margin-right: 20px;
+    }
+
+    .tableArea h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    thead,
+    tbody {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+    }
+
+    tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+    th,
+    td {
+      display: flex;
+      align-items: center;
+      text-align: start;
+      border: 2px solid #FDFDFD;
+      height: 6vh;
+    }
+
+    th {
+      color: #ffd700;
+      font-weight: 900;
+      font-size: 2rem;
+    }
+    td {
+      color: #FDFDFD;
+      font-weight: 700;
+      font-size: 1.5em;
+      overflow-x: scroll;
+    }
+  </style>
+</head>
+
+<body style="background-color: #1c1c1c;">
+  <section id="card-details">
+    <div class="container">
+      <div class="img-section">
+        <img id="mainImage" src="../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png" alt="">
+        <div class="sub-images">
+          <img class="thumbnail" src="../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png" alt="">
+          <img class="thumbnail" src="../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-2.jpg" alt="">
+          <img class="thumbnail" src="../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-3.jpg" alt="">
+          <img class="thumbnail" src="../Assests/images/GooglePixel/Pixel 7 Pro/gsmarena_003.jpg" alt="">
+        </div>
+      </div>
+      <div class="tableArea">
+        <h1>Phone Name</h1>
+        <table>
+          <thead>
+            <tr>
+              <th>RAM</th>
+              <th>Storage/ROM</th>
+              <th>Processor</th>
+              <th>Battery</th>
+              <th>Front Camera</th>
+              <th>Rear Camera</th>
+              <th>Display</th>
+              <th>NFC</th>
+              <th>Colors</th>
+              <th>Operating System(OS)</th>
+              <th>Charging Type</th>
+              <th>SIM</th>
+              <th>Fingerprint</th>
+              <th>Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>Yes</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+              <td>1234</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+  <!-- <h2 class="text-center col-6 border m-0">Phone Name</h2>
+        <table class="table custom-table col-12">
+            <thead class="col-6">
+                <tr class="">
+                    <th class="border">RAM</th>
+                    <th class="border">Storage ROM 2</th>
+                    <th class="border">Processor</th>
+                    <th class="border">Battery</th>
+                    <th class="border">Front Camera</th>
+                    <th class="border">Rear Camera</th>
+                    <th class="border">Display</th>
+                    <th class="border">NFC</th>
+                    <th class="border">Colors</th>
+                    <th class="border">Operating System(OS)</th>
+                    <th class="border">Charging Type</th>
+                    <th class="border">SIM</th>
+                    <th class="border">Fingerprint</th>
+                    <th class="border">Release Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Row 1, Data 1</td>
+                    <td>Row 1, Data 2</td>
+                    <td>Row 1, Data 3</td>
+                </tr>
+            </tbody>
+        </table>
+      </div>
+    </div> -->
+
+  <!-- Bootstrap JS and Dependencies -->
+  <script>
+
+    mainImage = document.getElementById("mainImage");
+    thumbnails = document.querySelectorAll(".thumbnail");
+
+    thumbnails.forEach(thumbnail => {
+      thumbnail.addEventListener("click", function () {
+        mainImage.src = thumbnail.src
+      })
+    }
+
+    );
+  </script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -34,13 +34,116 @@
    <link rel="stylesheet" href="../Assests/css/phones.css">
    <link rel="stylesheet" href="../Assests/css/home.css">
    <link rel="icon" href="../Assests/images/Logo-cropped.png">
+
+   <style>
+      * {
+         margin: 0;
+         padding: 0;
+         color: #FDFDFD;
+      }
+
+      .container {
+         display: flex;
+         flex-direction: row;
+         width: 100%;
+         margin-top: 4em;
+      }
+
+      .img-section {
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         width: 50%;
+      }
+
+      #mainImage {
+         height: 40em;
+         width: 40em;
+         border: 1px solid #FDFDFD;
+      }
+
+      .sub-images {
+         display: flex;
+         flex-direction: row;
+         gap: .5em;
+         border: 2px solid #ffd700;
+         margin-top: 20px;
+      }
+
+      .sub-images img {
+         cursor: pointer;
+         height: 100px;
+         width: 100px;
+         /* border: 2px solid #ffd700; */
+      }
+
+      .tableArea {
+         width: 50%;
+         display: flex;
+         /* justify-content: center; */
+         align-items: center;
+         flex-direction: column;
+         margin-right: 20px;
+         margin-bottom: 50px;
+      }
+
+      .tableArea h1 {
+         font-size: 40px;
+         margin-bottom: 20px;
+      }
+
+      table {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+      }
+
+      thead {
+         width: fit-content;
+      }
+
+      tbody {
+         display: flex;
+         flex-direction: column;
+         width: fit-content;
+      }
+
+      tr {
+         display: flex;
+         flex-direction: column;
+      }
+
+      th,
+      td {
+         display: flex;
+         align-items: center;
+         text-align: start;
+         border: 2px solid #FDFDFD;
+         height: 10vh;
+      }
+
+      th {
+         color: #ffd700;
+         font-weight: 900;
+         font-size: 1.5rem;
+      }
+
+      td {
+         color: #FDFDFD;
+         font-weight: 700;
+         font-size: 1em;
+         overflow-x: hidden;
+      }
+   </style>
 </head>
 
 <body>
-   <header style="border-bottom: 1px solid gray;">
-      <nav id='cssmenu'>
-         <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png"
-                  height="30%" width="30%"></a>
+   <header style="border-bottom: 1px solid grey; width: 100%;">
+      <nav id='cssmenu' style="width: 100%;">
+         <div class="logo" style="margin-right: 50vw;">
+            <a href="home.html">
+               <img src="../Assests/images/Logo-removebg-preview.png" height="60%" width="60%"></a>
             <div class="brandName">
                <p>Ask Me</p>
                <p class="sig">Ltd.</p>
@@ -48,10 +151,8 @@
          </div>
          <div id="head-mobile"></div>
          <div class="button"></div>
-         <ul style="z-index: 123;">
+         <ul style="z-index: 123; background-color: rgba(28, 28, 28, 0);">
             <li><a href='home.html'>HOME</a></li>
-            <li class='active'><a href='about.html'>ABOUT</a></li>
-            <li><a href='compare.html'>COMPARE</a></li>
             <li><a href='phones.html'>PHONES</a>
                <ul>
                   <li><a href='ios.html'>iOS</a>
@@ -72,850 +173,902 @@
                   </li>
                </ul>
             </li>
+            <li><a href='about.html'>ABOUT</a></li>
+            <li><a href='compare.html'>COMPARE</a></li>
             <li><a href='contact.html'>CONTACT</a></li>
          </ul>
       </nav>
    </header>
 
-   <div class="container d-flex justify-content-center align-items-center">
-      <div id="card-details" class="d-flex justify-content-center align-items-center flex-column">
+   <section id="card-details">
 
-   <script>
-      // Sample card data
-      cards = [
-         {
-            img: "../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png",
-            title: "Pixel 7 Pro",
-            brand: "Google Pixels",
-            display: "6.7",
-            rom: "128/256",
-            ram: "8/12",
-            battery: "5000",
-            id: 1,
-            img1: "../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-2.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-3.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 7 Pro/gsmarena_004.jpg",
-            price:234.99,
-            chip: "Google Tensor G2 (5 nm)",
-            fcam: 10.8,
-            rcam: 50,
-            nfc: "Yes",
-            colors: "Obsidian, Snow, Hazel",
-            os: "Android 13",
-            usb: "USB-C",
-            release: "2022, October 13",
-            sim: "Dual SIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/GooglePixel/Pixel 7a/Pixel 7a.jpg",
-            title: "Pixel 7a",
-            brand: "Google Pixels",
-            display: "6.1",
-            rom: "128",
-            ram: "8",
-            battery: "4385",
-            id: 2,
-            img1: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-1.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-3.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 7a/gsmarena_002.jpg",
-            price:179.95,
-            chip: "Google Tensor G2 (5 nm)",
-            fcam: 13,
-            rcam: 64,
-            nfc: "Yes",
-            colors: "Charcoal, Snow, Sea, Coral",
-            os: "Android 13",
-            usb: "USB-C",
-            release: "2023, May 10",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/GooglePixel/Pixel 8 Pro/Pixel 8Pro.png",
-            title: "Pixel 8 Pro",
-            brand: "Google Pixels",
-            display: "6.7",
-            rom: "128/256",
-            ram: "12",
-            battery: "5050",
-            id: 3,
-            img1: "../Assests/images/GooglePixel/Pixel 8 Pro/google-pixel-8-pro-1.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 8 Pro/google-pixel-8-pro-2.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 8 Pro/gsmarena_010.jpg",
-            price:300,
-            chip: "Google Tensor G3 (4 nm)",
-            fcam: 10.5,
-            rcam: 50,
-            nfc: "Yes",
-            colors: "Obsidian, Porcelain, Bay, Mint",
-            os: "Android 14",
-            usb: "USB-C",
-            release: "2023, October 12",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/GooglePixel/Pixel 8a/Pixel 8a.png",
-            title: "Pixel 8a",
-            brand: "Google Pixels",
-            display: "6.1",
-            rom: "128/256",
-            ram: "8",
-            battery: "4492",
-            id: 4,
-            img1: "../Assests/images/GooglePixel/Pixel 8a/google-pixel-8a-1.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 8a/google-pixel-8a-2.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 8a/gsmarena_002 (1).jpg",
-            price:300,
-            chip: "Google Tensor G3 (4 nm)",
-            fcam: 13,
-            rcam: 64,
-            nfc: "Yes",
-            colors: "Obsidian, Porcelain, Bay, Aloe",
-            os: "Android 14",
-            usb: "USB-C",
-            release: "2024, May 14",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/GooglePixel/Pixel 9 Pro/Pixel 9Pro.webp",
-            title: "Pixel 9 Pro",
-            brand: "Google Pixels",
-            display: "6.3",
-            rom: "128/256",
-            ram: "16",
-            battery: "4700",
-            id: 5,
-            img1: "../Assests/images/GooglePixel/Pixel 9 Pro/google-pixel-9-pro-1.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 9 Pro/google-pixel-9-pro-2.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 9 Pro/gsmarena_008 (1).jpg",
-            price:774.98,
-            chip: "Google Tensor G4 (4 nm)",
-            fcam: 42,
-            rcam: "Triple: 50,48,48",
-            nfc: "Yes",
-            colors: "Porcelain, Rose Quartz, Hazel, Obsidian",
-            os: "Android 14",
-            usb: "USB-C",
-            release: "2024, May 14",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/Pixel 9ProFold.png",
-            title: "Pixel 9 Pro Fold",
-            brand: "Google Pixels",
-            display: "8.0",
-            rom: "256/512",
-            ram: "16",
-            battery: "4650",
-            id: 6,
-            img1: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/google-pixel-9-pro-fold-1.jpg",
-            img2: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/google-pixel-9-pro-fold-3.jpg",
-            img3: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/gsmarena_014.jpg",
-            price:"1,549.97",
-            chip: "Google Tensor G4 (4 nm)",
-            fcam: 10,
-            rcam: "Triple: 48,10.5,10.8",
-            nfc: "Yes",
-            colors: "Obsidian, Porcelain",
-            os: "Android 14",
-            usb: "USB-C",
-            release: "2024, September 04",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Ipad/Apple iPad mini (2019)/Apple iPad mini (2019).png",
-            title: "iPad mini (2019)",
-            brand: "Apple-Ipad",
-            display: "7.9",
-            rom: "64/256",
-            ram: "3",
-            battery: "5124",
-            id: 7,
-            img1: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-1.jpg",
-            img2: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-2.jpg",
-            img3: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-3.jpg",
-            price:"N/A",
-            chip: "Apple A12 Bionic (7 nm)",
-            fcam: 7,
-            rcam: "8",
-            nfc: "No",
-            colors: "Space Gray, Silver, Gold",
-            os: "iOS 12.1.3",
-            usb: "Lightning, USB 2.0",
-            release: "2019, March 18",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Ipad/Apple iPad mini (2024)/Apple iPad mini (2024).png",
-            title: "iPad mini (2024)",
-            brand: "Apple-Ipad",
-            display: "8.3",
-            rom: "128/256",
-            ram: "8",
-            battery: "5078",
-            id: 8,
-            img1: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-1.jpg",
-            img2: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-2.jpg",
-            img3: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-3.jpg",
-            price:"N/A",
-            chip: "Apple A17 Pro (3 nm)",
-            fcam: 12,
-            rcam: "12",
-            nfc: "No",
-            colors: "Space Gray, Blue, Purple, Starlight",
-            os: "iPadOS 18",
-            usb: "USB Type-C",
-            release: "2024, October 23",
-            sim: "eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Ipad/Ipad 10/Ipad 10.png",
-            title: "iPad 10",
-            brand: "Apple-Ipad",
-            display: "10.9",
-            rom: "64/256",
-            ram: "4",
-            battery: "7606",
-            id: 9,
-         },
-         {
-            img: "../Assests/images/Ipad/Ipad 10.2/Ipad 10.2.webp",
-            title: "iPad 10.2",
-            brand: "Apple-Ipad",
-            display: "10.2",
-            rom: "64/256",
-            ram: "3",
-            battery: "8557",
-            id: 10,
-         },
-         {
-            img: "../Assests/images/Ipad/Ipad Air 13/Ipad Air 13.png",
-            title: "Ipad Air 13",
-            brand: "Apple-Ipad",
-            display: "13.0",
-            rom: "128/256",
-            ram: "8",
-            battery: "9705",
-            id: 11,
-         },
-         {
-            img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
-            title: "Ipad Pro 13",
-            brand: "Apple-Ipad",
-            display: "13.0",
-            rom: "256/512",
-            ram: "8/16",
-            battery: "10290",
-            id: 12,
-         },
-         {
-            img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
-            title: "Ipad Pro 13",
-            brand: "Apple-Ipad",
-            display: "13.0",
-            rom: "256/512",
-            ram: "8/16",
-            battery: "10290",
-            id: 13,
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone 12/Iphone 12.png",
-            title: "Iphone 12",
-            brand: "Apple-Iphone",
-            display: "6.1",
-            rom: "64/128",
-            ram: "4",
-            battery: "2815",
-            id: 14,
-            img1: "../Assests/images/Iphone/Iphone 12/apple-iphone-12-3.jpg",
-            img2: "../Assests/images/Iphone/Iphone 12/apple-iphone-12-4.jpg",
-            img3: "../Assests/images/Iphone/Iphone 12/gsmarena_001.jpg",
-            price:" 257.41",
-            chip: "Apple A14 Bionic (5 nm)",
-            fcam: 12,
-            rcam: "Dual: 12,12",
-            nfc: "Yes",
-            colors: "Black, White, Red, Green, Blue, Purple",
-            os: "iOS 14.1",
-            usb: "Lightning, USB 2.0",
-            release: "2020, October 23",
-            sim: "Nano-SIM and eSIM or Dual SIM",
-            finger: "No",
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone 13/Iphone 13.png",
-            title: "Iphone 13",
-            brand: "Apple-Iphone",
-            display: "6.1",
-            rom: "128/256",
-            ram: "4",
-            battery: "3240",
-            id: 15,
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone 14 ProMax/Iphone 14 ProMax.png",
-            title: "Iphone 14 Pro Max",
-            brand: "Apple-Iphone",
-            display: "6.7",
-            rom: "128/256",
-            ram: "6",
-            battery: "4323",
-            id: 16,
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone 15 Pro/Iphone 15 Pro.png",
-            title: "Iphone 15 Pro",
-            brand: "Apple-Iphone",
-            display: "6.1",
-            rom: "128/256",
-            ram: "8",
-            battery: "3274",
-            id: 17,
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone 16 Pro/Iphone 16 Pro.png",
-            title: "Iphone 16 Pro",
-            brand: "Apple-Iphone",
-            display: "6.3",
-            rom: "128/256",
-            ram: "8",
-            battery: "3582",
-            id: 18,
-         },
-         {
-            img: "../Assests/images/Iphone/Iphone X/Iphone X.png",
-            title: "Iphone X",
-            brand: "Apple-Iphone",
-            display: "5.8",
-            rom: "64/256",
-            ram: "3",
-            battery: "2716",
-            id: 19,
-         },
-         {
-            img: "../Assests/images/Ipod/iPod Touch 1/iPod Touch 1.png",
-            title: "iPod Touch 1",
-            brand: "Apple-Ipod",
-            display: "3.5",
-            rom: "8/16/32",
-            ram: "N/A",
-            battery: "950",
-            id: 20,
-            price:"257.41",
-            chip: "400 MHz",
-            fcam: "No",
-            rcam: "No",
-            nfc: "No",
-            colors: "Black",
-            os: "iPhone OS 1.0",
-            usb: "Micro USB",
-            release: "September 5, 2007",
-            sim: "No SIM",
-            finger: "No",
-         },
-         {
-            img: "../Assests/images/Ipod/iPod Touch 3/iPod Touch 3.png",
-            title: "iPod Touch 3",
-            brand: "Apple-Ipod",
-            display: "3.5",
-            rom: "32/64",
-            ram: "N/A",
-            battery: "789",
-            id: 21,
-         },
-         {
-            img: "../Assests/images/Ipod/iPod Touch 4/iPod Touch 4.png",
-            title: "iPod Touch 4",
-            brand: "Apple-Ipod",
-            display: "3.5",
-            rom: "8/32/64",
-            ram: "N/A",
-            battery: "930",
-            id: 22,
-         },
-         {
-            img: "../Assests/images/Ipod/iPod Touch 5/iPod Touch 5.webp",
-            title: "iPod Touch 5",
-            brand: "Apple-Ipod",
-            display: "4.0",
-            rom: "32/64",
-            ram: "N/A",
-            battery: "1030",
-            id: 23,
-         },
-         {
-            img: "../Assests/images/Ipod/iPod Touch 6/iPod Touch 6.png",
-            title: "iPod Touch 6",
-            brand: "Apple-Ipod",
-            display: "4.0",
-            rom: "32/64",
-            ram: "N/A",
-            battery: "1043",
-            id: 24,
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia 5.4/Nokia 5.4.png",
-            title: "Nokia 5.4",
-            brand: "Nokia",
-            display: "6.39",
-            rom: "64/128",
-            ram: "4/6",
-            battery: "4000",
-            id: 25,
-            img1: "../Assests/images/Nokia/Nokia 5.4/nokia-5-4-colorways.jpg",
-            img2: "../Assests/images/Nokia/Nokia 5.4/nokia-5-4-pakistan-priceoye-1l6u6-500x500.webp",
-            img3: "../Assests/images/Nokia/Nokia 5.4/nokia-54-2020-2.jpg",
-            price:"N/A",
-            chip: "Qualcomm SM6115 Snapdragon 662 (11 nm)",
-            fcam: 16,
-            rcam: "Quad: 48,5,2,2",
-            nfc: "Yes",
-            colors: "Polar Night, Dusk",
-            os: "Android 10",
-            usb: "USB Type-C 2.0, OTG",
-            release: "2020, December 25",
-            sim: "Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia 7 Plus/Nokia 7 Plus.png",
-            title: "Nokia 7 Plus",
-            brand: "Nokia",
-            display: "6.0",
-            rom: "64",
-            ram: "4/6",
-            battery: "3800",
-            id: 26,
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia 8.3 5G/Nokia 8.3 5G.png",
-            title: "Nokia 8.3 5G",
-            brand: "Nokia",
-            display: "6.81",
-            rom: "64/128",
-            ram: "6/8",
-            battery: "4500",
-            id: 27,
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia G42 5G Dual Sim/Nokia G42 5G.webp",
-            title: "Nokia G42 5G",
-            brand: "Nokia",
-            display: "6.56",
-            rom: "128/256",
-            ram: "4/8",
-            battery: "5000",
-            id: 28,
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia X30 Dual Sim 5G/Nokia X30.jpg",
-            title: "Nokia X30",
-            brand: "Nokia",
-            display: "6.43",
-            rom: "128/256",
-            ram: "6/8",
-            battery: "4200",
-            id: 29,
-         },
-         {
-            img: "../Assests/images/Nokia/Nokia XR21 5G/Nokia XR21 5G.png",
-            title: "Nokia XR21 5G",
-            brand: "Nokia",
-            display: "6.49",
-            rom: "128",
-            ram: "6",
-            battery: "4800",
-            id: 30,
-         },
-         {
-            img: "../Assests/images/OnePlus/One Plus 11/One Plus 11.png",
-            title: "One Plus 11",
-            brand: "OnePlus",
-            display: "6.7",
-            rom: "128/256",
-            ram: "8-16",
-            battery: "5000",
-            id: 31,
-            img1: "../Assests/images/OnePlus/One Plus 11/oneplus-11-2.jpg",
-            img2: "../Assests/images/OnePlus/One Plus 11/oneplus-11-3 (1).jpg",
-            img3: "../Assests/images/OnePlus/One Plus 11/gsmarena_004.jpg",
-            price:"400.22",
-            chip: "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
-            fcam: 16,
-            rcam: "Triple: 50,32,48",
-            nfc: "Yes",
-            colors: "Titan Black, Eternal Green, Jupiter Rock",
-            os: "Android 13",
-            usb: "USB Type-C 2.0, OTG",
-            release: "2023, January 09",
-            sim: "Single SIM (Nano-SIM) or Dual SIM (2x Nano-SIM, eSIM, dual stand-by)",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/OnePlus/One Plus Nord CE 3 Lite 5G/One Plus Nord CE 3 Lite 5G.png",
-            title: "One Plus Nord CE 3 Lite 5G",
-            brand: "OnePlus",
-            display: "6.72",
-            rom: "128/256",
-            ram: "8",
-            battery: "5000",
-            id: 32,
-         },
-         {
-            img: "../Assests/images/OnePlus/One Plus Nord CE 4 Lite 5G/One Plus Nord CE 4 Lite 5G.png",
-            title: "One Plus Nord CE 4 Lite 5G",
-            brand: "OnePlus",
-            display: "6.67",
-            rom: "256",
-            ram: "8",
-            battery: "5110",
-            id: 33,
-         },
-         {
-            img: "../Assests/images/OnePlus/One Plus Open/One Plus Open.png",
-            title: "One Plus Open",
-            brand: "OnePlus",
-            display: "7.82",
-            rom: "1 TB/512",
-            ram: "16",
-            battery: "4805",
-            id: 34,
-         },
-         {
-            img: "../Assests/images/OnePlus/OnePlus 12/OnePlus 12.png",
-            title: "OnePlus 12",
-            brand: "OnePlus",
-            display: "6.82",
-            rom: "256/512",
-            ram: "12-24",
-            battery: "5400",
-            id: 35,
-         },
-         {
-            img: "../Assests/images/OnePlus/OnePlus 12R/OnePlus 12R.png",
-            title: "OnePlus 12R",
-            brand: "OnePlus",
-            display: "6.78",
-            rom: "128/256",
-            ram: "8-16",
-            battery: "5500",
-            id: 36,
-         },
-         {
-            img: "../Assests/images/Redmi/Note 13/Note 13.png",
-            title: "Note 13",
-            brand: "Redmi",
-            display: "6.67",
-            rom: "128/256",
-            ram: "6-12",
-            battery: "5000",
-            id: 37,
-            img1: "../Assests/images/Redmi/Note 13/xiaomi-redmi-note-13-5g-1.jpg",
-            img2: "../Assests/images/Redmi/Note 13/xiaomi-redmi-note-13-5g-2.jpg",
-            img3: "../Assests/images/Redmi/Note 13/gsmarena_007.jpg",
-            price:"112.61",
-            chip: "Mediatek Dimensity 6080 (6 nm)",
-            fcam: 16,
-            rcam: "Triple: 108,2,8",
-            nfc: "Yes",
-            colors: "Graphite Black, Arctic White, Ocean Teal, Prism Gold",
-            os: "Android 13",
-            usb: "USB Type-C 2.0, OTG",
-            release: "2024, January 10",
-            sim: "Hybrid Dual SIM (Nano-SIM, dual stand-by)",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Redmi/Note 13 Pro/Note 13 Pro.png",
-            title: "Note 13 Pro",
-            brand: "Redmi",
-            display: "6.67",
-            rom: "128/256",
-            ram: "8-16",
-            battery: "5100",
-            id: 38,
-         },
-         {
-            img: "../Assests/images/Redmi/Redmi 12/Redmi 12.webp",
-            title: "Redmi 12",
-            brand: "Redmi",
-            display: "6.79",
-            rom: "128/256",
-            ram: "2-8",
-            battery: "5000",
-            id: 39,
-         },
-         {
-            img: "../Assests/images/Redmi/Redmi 13/Redmi 13.png",
-            title: "Redmi 13",
-            brand: "Redmi",
-            display: "6.79",
-            rom: "128/256",
-            ram: "6/8",
-            battery: "5030",
-            id: 40,
-         },
-         {
-            img: "../Assests/images/Redmi/Redmi Note 8/Redmi Note 8.png",
-            title: "Redmi Note 8",
-            brand: "Redmi",
-            display: "6.3",
-            rom: "32/64",
-            ram: "3-6",
-            battery: "4000",
-            id: 41,
-         },
-         {
-            img: "../Assests/images/Redmi/Redmi Note 11/Redmi Note 11.webp",
-            title: "Redmi Note 11",
-            brand: "Redmi",
-            display: "6.43",
-            rom: "64/128",
-            ram: "4/6",
-            battery: "5000",
-            id: 42,
-         },
-         {
-            img: "../Assests/images/Samsung/Galaxy Z Flip/Galaxy Z Flip.png",
-            title: "Galaxy Z Flip",
-            brand: "Samsung",
-            display: "6.7",
-            rom: "256",
-            ram: "8",
-            battery: "3300",
-            id: 43,
-            img1: "../Assests/images/Samsung/Galaxy Z Flip/samsung-galaxy-z-flip-1.jpg",
-            img2: "../Assests/images/Samsung/Galaxy Z Flip/samsung-galaxy-z-flip-10.jpg",
-            img3: "../Assests/images/Samsung/Galaxy Z Flip/gsmarena_011 (2).jpg",
-            price:"N/A",
-            chip: "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
-            fcam: 10,
-            rcam: "Dual: 12,12",
-            nfc: "Yes",
-            colors: "Mirror Black, Mirror Purple, Mirror Gold, Thom Browne Edition",
-            os: "Android 10",
-            usb: "USB Type-C 2.0, OTG",
-            release: "2020, February 14",
-            sim: "Nano-SIM and eSIM",
-            finger: "Yes",
-         },
-         {
-            img: "../Assests/images/Samsung/Galaxy Z Fold 4/Galaxy Z Fold 4.png",
-            title: "Galaxy Z Fold 4",
-            brand: "Samsung",
-            display: "7.6",
-            rom: "256/512",
-            ram: "12",
-            battery: "4400",
-            id: 44,
-         },
-         {
-            img: "../Assests/images/Samsung/Galaxy Z Fold 5/Galaxy Z Fold 5.png",
-            title: "Galaxy Z Fold 5",
-            brand: "Samsung",
-            display: "7.6",
-            rom: "256/512",
-            ram: "12",
-            battery: "4400",
-            id: 45,
-         },
-         {
-            img: "../Assests/images/Samsung/Galaxy Z Fold 6/Galaxy Z Fold 6.png",
-            title: "Galaxy Z Fold 6",
-            brand: "Samsung",
-            display: "7.6",
-            rom: "256/512",
-            ram: "12",
-            battery: "4400",
-            id: 46,
-         },
-         {
-            img: "../Assests/images/Samsung/S23 Ultra/S23 Ultra.webp",
-            title: "S23 Ultra",
-            brand: "Samsung",
-            display: "6.8",
-            rom: "256/512",
-            ram: "8/12",
-            battery: "5000",
-            id: 47,
-         },
-         {
-            img: "../Assests/images/Samsung/S24 Ultra/S24 Ultra.png",
-            title: "S24 Ultra",
-            brand: "Samsung",
-            display: "6.8",
-            rom: "256/512",
-            ram: "12",
-            battery: "5000",
-            id: 48,
-         },
-      ]
-      
+      <script>
+         // Sample card data
+         cards = [
+            {
+               img: "../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png",
+               title: "Pixel 7 Pro",
+               brand: "Google Pixels",
+               display: "6.7",
+               rom: "128/256",
+               ram: "8/12",
+               battery: "5000",
+               id: 1,
+               img1: "../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-2.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 7 Pro/google-pixel7-pro-3.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 7 Pro/gsmarena_004.jpg",
+               price: 234.99,
+               chip: "Google Tensor G2 (5 nm)",
+               fcam: 10.8,
+               rcam: 50,
+               nfc: "Yes",
+               colors: "Obsidian, Snow, Hazel",
+               os: "Android 13",
+               usb: "USB-C",
+               release: "2022, October 13",
+               sim: "Dual SIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/GooglePixel/Pixel 7a/Pixel 7a.jpg",
+               title: "Pixel 7a",
+               brand: "Google Pixels",
+               display: "6.1",
+               rom: "128",
+               ram: "8",
+               battery: "4385",
+               id: 2,
+               img1: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-3.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 7a/gsmarena_002.jpg",
+               price: 179.95,
+               chip: "Google Tensor G2 (5 nm)",
+               fcam: 13,
+               rcam: 64,
+               nfc: "Yes",
+               colors: "Charcoal, Snow, Sea, Coral",
+               os: "Android 13",
+               usb: "USB-C",
+               release: "2023, May 10",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/GooglePixel/Pixel 8 Pro/Pixel 8Pro.png",
+               title: "Pixel 8 Pro",
+               brand: "Google Pixels",
+               display: "6.7",
+               rom: "128/256",
+               ram: "12",
+               battery: "5050",
+               id: 3,
+               img1: "../Assests/images/GooglePixel/Pixel 8 Pro/google-pixel-8-pro-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 8 Pro/google-pixel-8-pro-2.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 8 Pro/gsmarena_010.jpg",
+               price: 300,
+               chip: "Google Tensor G3 (4 nm)",
+               fcam: 10.5,
+               rcam: 50,
+               nfc: "Yes",
+               colors: "Obsidian, Porcelain, Bay, Mint",
+               os: "Android 14",
+               usb: "USB-C",
+               release: "2023, October 12",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/GooglePixel/Pixel 8a/Pixel 8a.png",
+               title: "Pixel 8a",
+               brand: "Google Pixels",
+               display: "6.1",
+               rom: "128/256",
+               ram: "8",
+               battery: "4492",
+               id: 4,
+               img1: "../Assests/images/GooglePixel/Pixel 8a/google-pixel-8a-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 8a/google-pixel-8a-2.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 8a/gsmarena_002 (1).jpg",
+               price: 300,
+               chip: "Google Tensor G3 (4 nm)",
+               fcam: 13,
+               rcam: 64,
+               nfc: "Yes",
+               colors: "Obsidian, Porcelain, Bay, Aloe",
+               os: "Android 14",
+               usb: "USB-C",
+               release: "2024, May 14",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/GooglePixel/Pixel 9 Pro/Pixel 9Pro.webp",
+               title: "Pixel 9 Pro",
+               brand: "Google Pixels",
+               display: "6.3",
+               rom: "128/256",
+               ram: "16",
+               battery: "4700",
+               id: 5,
+               img1: "../Assests/images/GooglePixel/Pixel 9 Pro/google-pixel-9-pro-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 9 Pro/google-pixel-9-pro-2.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 9 Pro/gsmarena_008 (1).jpg",
+               price: 774.98,
+               chip: "Google Tensor G4 (4 nm)",
+               fcam: 42,
+               rcam: "Triple: 50,48,48",
+               nfc: "Yes",
+               colors: "Porcelain, Rose Quartz, Hazel, Obsidian",
+               os: "Android 14",
+               usb: "USB-C",
+               release: "2024, May 14",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/Pixel 9ProFold.png",
+               title: "Pixel 9 Pro Fold",
+               brand: "Google Pixels",
+               display: "8.0",
+               rom: "256/512",
+               ram: "16",
+               battery: "4650",
+               id: 6,
+               img1: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/google-pixel-9-pro-fold-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/google-pixel-9-pro-fold-3.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/gsmarena_014.jpg",
+               price: "1,549.97",
+               chip: "Google Tensor G4 (4 nm)",
+               fcam: 10,
+               rcam: "Triple: 48,10.5,10.8",
+               nfc: "Yes",
+               colors: "Obsidian, Porcelain",
+               os: "Android 14",
+               usb: "USB-C",
+               release: "2024, September 04",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Apple iPad mini (2019)/Apple iPad mini (2019).png",
+               title: "iPad mini (2019)",
+               brand: "Apple-Ipad",
+               display: "7.9",
+               rom: "64/256",
+               ram: "3",
+               battery: "5124",
+               id: 7,
+               img1: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-1.jpg",
+               img2: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-2.jpg",
+               img3: "../Assests/images/Ipad/Apple iPad mini (2019)/apple-ipad-mini-2019-3.jpg",
+               price: "N/A",
+               chip: "Apple A12 Bionic (7 nm)",
+               fcam: 7,
+               rcam: "8",
+               nfc: "No",
+               colors: "Space Gray, Silver, Gold",
+               os: "iOS 12.1.3",
+               usb: "Lightning, USB 2.0",
+               release: "2019, March 18",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Apple iPad mini (2024)/Apple iPad mini (2024).png",
+               title: "iPad mini (2024)",
+               brand: "Apple-Ipad",
+               display: "8.3",
+               rom: "128/256",
+               ram: "8",
+               battery: "5078",
+               id: 8,
+               img1: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-1.jpg",
+               img2: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-2.jpg",
+               img3: "../Assests/images/Ipad/Apple iPad mini (2024)/apple-ipad-mini-2024-3.jpg",
+               price: "N/A",
+               chip: "Apple A17 Pro (3 nm)",
+               fcam: 12,
+               rcam: "12",
+               nfc: "No",
+               colors: "Space Gray, Blue, Purple, Starlight",
+               os: "iPadOS 18",
+               usb: "USB Type-C",
+               release: "2024, October 23",
+               sim: "eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Ipad 10/Ipad 10.png",
+               title: "iPad 10",
+               brand: "Apple-Ipad",
+               display: "10.9",
+               rom: "64/256",
+               ram: "4",
+               battery: "7606",
+               id: 9,
+               img1: "../Assests/images/Ipad/Ipad 10/Apple-iPad-10th-gen-hero-221018.jpg.og.jpg",
+               img2: "../Assests/images/Ipad/Ipad 10/apple-ipad-10-2022-1.jpg",
+               img3: "../Assests/images/Ipad/Ipad 10/Apple-iPad-10-inch-2022-review-4.webp",
+               price: "N/A",
+               chip: "Apple A14 Bionic (5 nm)",
+               fcam: 12,
+               rcam: "12",
+               nfc: "No",
+               colors: "Silver, Blue, Pink, Yellow",
+               os: "iPadOS 16.1",
+               usb: "USB Type-C 2.0",
+               release: "2022, October 26",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Ipad 10.2/Ipad 10.2.webp",
+               title: "iPad 10.2",
+               brand: "Apple-Ipad",
+               display: "10.2",
+               rom: "64/256",
+               ram: "3",
+               battery: "8557",
+               id: 10,
+               img1: "../Assests/images/Ipad/Ipad 10.2/apple-ipad-102-2021-1.jpg",
+               img2: "../Assests/images/Ipad/Ipad 10.2/gsmarena_006.jpg",
+               img3: "../Assests/images/Ipad/Ipad 10.2/gsmarena_025.jpg",
+               price: "N/A",
+               chip: "Apple A13 Bionic (7 nm+)",
+               fcam: 12,
+               rcam: "8",
+               nfc: "No",
+               colors: "Silver, Space Gray",
+               os: "iPadOS 15",
+               usb: "Lightning, USB 2.0",
+               release: "2021, September 24",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Ipad Air 13/Ipad Air 13.png",
+               title: "Ipad Air 13",
+               brand: "Apple-Ipad",
+               display: "13.0",
+               rom: "128/256",
+               ram: "8",
+               battery: "9705",
+               id: 11,
+               img1: "../Assests/images/Ipad/Ipad Air 13/apple-ipad-air-13-2024-4.jpg",
+               img2: "../Assests/images/Ipad/Ipad Air 13/apple-ipad-air-2024-2.jpg",
+               img3: "../Assests/images/Ipad/Ipad Air 13/apple-ipad-air-2024-3.jpg",
+               price: "N/A",
+               chip: "Apple M2",
+               fcam: 12,
+               rcam: "12",
+               nfc: "No",
+               colors: "Space Gray, Starlight, Purple, Blue",
+               os: "iPadOS 17.5.1",
+               usb: "USB Type-C 3.1 Gen2",
+               release: "2024, May 15",
+               sim: "eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
+               title: "Ipad Pro 13",
+               brand: "Apple-Ipad",
+               display: "13.0",
+               rom: "256/512",
+               ram: "8/16",
+               battery: "10290",
+               id: 12,
+               img1: "../Assests/images/Ipad/Ipad Pro 13/apple-ipad-air-13-2024-4.jpg",
+               img2: "../Assests/images/Ipad/Ipad Pro 13/apple-ipad-air-2024-2.jpg",
+               img3: "../Assests/images/Ipad/Ipad Pro 13/apple-ipad-air-2024-3.jpg",
+               price: "N/A",
+               chip: "Apple M2",
+               fcam: 12,
+               rcam: "12",
+               nfc: "No",
+               colors: "Space Gray, Starlight, Purple, Blue",
+               os: "iPadOS 17.5.1",
+               usb: "USB Type-C 3.1 Gen2",
+               release: "2024, May 15",
+               sim: "eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Ipad/Ipad Pro 13/Ipad Pro 13.png",
+               title: "Ipad Pro 13",
+               brand: "Apple-Ipad",
+               display: "13.0",
+               rom: "256/512",
+               ram: "8/16",
+               battery: "10290",
+               id: 13,
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone 12/Iphone 12.png",
+               title: "Iphone 12",
+               brand: "Apple-Iphone",
+               display: "6.1",
+               rom: "64/128",
+               ram: "4",
+               battery: "2815",
+               id: 14,
+               img1: "../Assests/images/Iphone/Iphone 12/apple-iphone-12-3.jpg",
+               img2: "../Assests/images/Iphone/Iphone 12/apple-iphone-12-4.jpg",
+               img3: "../Assests/images/Iphone/Iphone 12/gsmarena_001.jpg",
+               price: " 257.41",
+               chip: "Apple A14 Bionic (5 nm)",
+               fcam: 12,
+               rcam: "Dual: 12,12",
+               nfc: "Yes",
+               colors: "Black, White, Red, Green, Blue, Purple",
+               os: "iOS 14.1",
+               usb: "Lightning, USB 2.0",
+               release: "2020, October 23",
+               sim: "Nano-SIM and eSIM or Dual SIM",
+               finger: "No",
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone 13/Iphone 13.png",
+               title: "Iphone 13",
+               brand: "Apple-Iphone",
+               display: "6.1",
+               rom: "128/256",
+               ram: "4",
+               battery: "3240",
+               id: 15,
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone 14 ProMax/Iphone 14 ProMax.png",
+               title: "Iphone 14 Pro Max",
+               brand: "Apple-Iphone",
+               display: "6.7",
+               rom: "128/256",
+               ram: "6",
+               battery: "4323",
+               id: 16,
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone 15 Pro/Iphone 15 Pro.png",
+               title: "Iphone 15 Pro",
+               brand: "Apple-Iphone",
+               display: "6.1",
+               rom: "128/256",
+               ram: "8",
+               battery: "3274",
+               id: 17,
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone 16 Pro/Iphone 16 Pro.png",
+               title: "Iphone 16 Pro",
+               brand: "Apple-Iphone",
+               display: "6.3",
+               rom: "128/256",
+               ram: "8",
+               battery: "3582",
+               id: 18,
+            },
+            {
+               img: "../Assests/images/Iphone/Iphone X/Iphone X.png",
+               title: "Iphone X",
+               brand: "Apple-Iphone",
+               display: "5.8",
+               rom: "64/256",
+               ram: "3",
+               battery: "2716",
+               id: 19,
+            },
+            {
+               img: "../Assests/images/Ipod/iPod Touch 1/iPod Touch 1.png",
+               title: "iPod Touch 1",
+               brand: "Apple-Ipod",
+               display: "3.5",
+               rom: "8/16/32",
+               ram: "N/A",
+               battery: "950",
+               id: 20,
+               price: "257.41",
+               chip: "400 MHz",
+               fcam: "No",
+               rcam: "No",
+               nfc: "No",
+               colors: "Black",
+               os: "iPhone OS 1.0",
+               usb: "Micro USB",
+               release: "September 5, 2007",
+               sim: "No SIM",
+               finger: "No",
+            },
+            {
+               img: "../Assests/images/Ipod/iPod Touch 3/iPod Touch 3.png",
+               title: "iPod Touch 3",
+               brand: "Apple-Ipod",
+               display: "3.5",
+               rom: "32/64",
+               ram: "N/A",
+               battery: "789",
+               id: 21,
+            },
+            {
+               img: "../Assests/images/Ipod/iPod Touch 4/iPod Touch 4.png",
+               title: "iPod Touch 4",
+               brand: "Apple-Ipod",
+               display: "3.5",
+               rom: "8/32/64",
+               ram: "N/A",
+               battery: "930",
+               id: 22,
+            },
+            {
+               img: "../Assests/images/Ipod/iPod Touch 5/iPod Touch 5.webp",
+               title: "iPod Touch 5",
+               brand: "Apple-Ipod",
+               display: "4.0",
+               rom: "32/64",
+               ram: "N/A",
+               battery: "1030",
+               id: 23,
+            },
+            {
+               img: "../Assests/images/Ipod/iPod Touch 6/iPod Touch 6.png",
+               title: "iPod Touch 6",
+               brand: "Apple-Ipod",
+               display: "4.0",
+               rom: "32/64",
+               ram: "N/A",
+               battery: "1043",
+               id: 24,
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia 5.4/Nokia 5.4.png",
+               title: "Nokia 5.4",
+               brand: "Nokia",
+               display: "6.39",
+               rom: "64/128",
+               ram: "4/6",
+               battery: "4000",
+               id: 25,
+               img1: "../Assests/images/Nokia/Nokia 5.4/nokia-5-4-colorways.jpg",
+               img2: "../Assests/images/Nokia/Nokia 5.4/nokia-5-4-pakistan-priceoye-1l6u6-500x500.webp",
+               img3: "../Assests/images/Nokia/Nokia 5.4/nokia-54-2020-2.jpg",
+               price: "N/A",
+               chip: "Qualcomm SM6115 Snapdragon 662 (11 nm)",
+               fcam: 16,
+               rcam: "Quad: 48,5,2,2",
+               nfc: "Yes",
+               colors: "Polar Night, Dusk",
+               os: "Android 10",
+               usb: "USB Type-C 2.0, OTG",
+               release: "2020, December 25",
+               sim: "Single SIM (Nano-SIM) or Dual SIM (Nano-SIM, dual stand-by)",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia 7 Plus/Nokia 7 Plus.png",
+               title: "Nokia 7 Plus",
+               brand: "Nokia",
+               display: "6.0",
+               rom: "64",
+               ram: "4/6",
+               battery: "3800",
+               id: 26,
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia 8.3 5G/Nokia 8.3 5G.png",
+               title: "Nokia 8.3 5G",
+               brand: "Nokia",
+               display: "6.81",
+               rom: "64/128",
+               ram: "6/8",
+               battery: "4500",
+               id: 27,
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia G42 5G Dual Sim/Nokia G42 5G.webp",
+               title: "Nokia G42 5G",
+               brand: "Nokia",
+               display: "6.56",
+               rom: "128/256",
+               ram: "4/8",
+               battery: "5000",
+               id: 28,
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia X30 Dual Sim 5G/Nokia X30.jpg",
+               title: "Nokia X30",
+               brand: "Nokia",
+               display: "6.43",
+               rom: "128/256",
+               ram: "6/8",
+               battery: "4200",
+               id: 29,
+            },
+            {
+               img: "../Assests/images/Nokia/Nokia XR21 5G/Nokia XR21 5G.png",
+               title: "Nokia XR21 5G",
+               brand: "Nokia",
+               display: "6.49",
+               rom: "128",
+               ram: "6",
+               battery: "4800",
+               id: 30,
+            },
+            {
+               img: "../Assests/images/OnePlus/One Plus 11/One Plus 11.png",
+               title: "One Plus 11",
+               brand: "OnePlus",
+               display: "6.7",
+               rom: "128/256",
+               ram: "8-16",
+               battery: "5000",
+               id: 31,
+               img1: "../Assests/images/OnePlus/One Plus 11/oneplus-11-2.jpg",
+               img2: "../Assests/images/OnePlus/One Plus 11/oneplus-11-3 (1).jpg",
+               img3: "../Assests/images/OnePlus/One Plus 11/gsmarena_004.jpg",
+               price: "400.22",
+               chip: "Qualcomm SM8550-AB Snapdragon 8 Gen 2 (4 nm)",
+               fcam: 16,
+               rcam: "Triple: 50,32,48",
+               nfc: "Yes",
+               colors: "Titan Black, Eternal Green, Jupiter Rock",
+               os: "Android 13",
+               usb: "USB Type-C 2.0, OTG",
+               release: "2023, January 09",
+               sim: "Single SIM (Nano-SIM) or Dual SIM (2x Nano-SIM, eSIM, dual stand-by)",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/OnePlus/One Plus Nord CE 3 Lite 5G/One Plus Nord CE 3 Lite 5G.png",
+               title: "One Plus Nord CE 3 Lite 5G",
+               brand: "OnePlus",
+               display: "6.72",
+               rom: "128/256",
+               ram: "8",
+               battery: "5000",
+               id: 32,
+            },
+            {
+               img: "../Assests/images/OnePlus/One Plus Nord CE 4 Lite 5G/One Plus Nord CE 4 Lite 5G.png",
+               title: "One Plus Nord CE 4 Lite 5G",
+               brand: "OnePlus",
+               display: "6.67",
+               rom: "256",
+               ram: "8",
+               battery: "5110",
+               id: 33,
+            },
+            {
+               img: "../Assests/images/OnePlus/One Plus Open/One Plus Open.png",
+               title: "One Plus Open",
+               brand: "OnePlus",
+               display: "7.82",
+               rom: "1 TB/512",
+               ram: "16",
+               battery: "4805",
+               id: 34,
+            },
+            {
+               img: "../Assests/images/OnePlus/OnePlus 12/OnePlus 12.png",
+               title: "OnePlus 12",
+               brand: "OnePlus",
+               display: "6.82",
+               rom: "256/512",
+               ram: "12-24",
+               battery: "5400",
+               id: 35,
+            },
+            {
+               img: "../Assests/images/OnePlus/OnePlus 12R/OnePlus 12R.png",
+               title: "OnePlus 12R",
+               brand: "OnePlus",
+               display: "6.78",
+               rom: "128/256",
+               ram: "8-16",
+               battery: "5500",
+               id: 36,
+            },
+            {
+               img: "../Assests/images/Redmi/Note 13/Note 13.png",
+               title: "Note 13",
+               brand: "Redmi",
+               display: "6.67",
+               rom: "128/256",
+               ram: "6-12",
+               battery: "5000",
+               id: 37,
+               img1: "../Assests/images/Redmi/Note 13/xiaomi-redmi-note-13-5g-1.jpg",
+               img2: "../Assests/images/Redmi/Note 13/xiaomi-redmi-note-13-5g-2.jpg",
+               img3: "../Assests/images/Redmi/Note 13/gsmarena_007.jpg",
+               price: "112.61",
+               chip: "Mediatek Dimensity 6080 (6 nm)",
+               fcam: 16,
+               rcam: "Triple: 108,2,8",
+               nfc: "Yes",
+               colors: "Graphite Black, Arctic White, Ocean Teal, Prism Gold",
+               os: "Android 13",
+               usb: "USB Type-C 2.0, OTG",
+               release: "2024, January 10",
+               sim: "Hybrid Dual SIM (Nano-SIM, dual stand-by)",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Redmi/Note 13 Pro/Note 13 Pro.png",
+               title: "Note 13 Pro",
+               brand: "Redmi",
+               display: "6.67",
+               rom: "128/256",
+               ram: "8-16",
+               battery: "5100",
+               id: 38,
+            },
+            {
+               img: "../Assests/images/Redmi/Redmi 12/Redmi 12.webp",
+               title: "Redmi 12",
+               brand: "Redmi",
+               display: "6.79",
+               rom: "128/256",
+               ram: "2-8",
+               battery: "5000",
+               id: 39,
+            },
+            {
+               img: "../Assests/images/Redmi/Redmi 13/Redmi 13.png",
+               title: "Redmi 13",
+               brand: "Redmi",
+               display: "6.79",
+               rom: "128/256",
+               ram: "6/8",
+               battery: "5030",
+               id: 40,
+            },
+            {
+               img: "../Assests/images/Redmi/Redmi Note 8/Redmi Note 8.png",
+               title: "Redmi Note 8",
+               brand: "Redmi",
+               display: "6.3",
+               rom: "32/64",
+               ram: "3-6",
+               battery: "4000",
+               id: 41,
+            },
+            {
+               img: "../Assests/images/Redmi/Redmi Note 11/Redmi Note 11.webp",
+               title: "Redmi Note 11",
+               brand: "Redmi",
+               display: "6.43",
+               rom: "64/128",
+               ram: "4/6",
+               battery: "5000",
+               id: 42,
+            },
+            {
+               img: "../Assests/images/Samsung/Galaxy Z Flip/Galaxy Z Flip.png",
+               title: "Galaxy Z Flip",
+               brand: "Samsung",
+               display: "6.7",
+               rom: "256",
+               ram: "8",
+               battery: "3300",
+               id: 43,
+               img1: "../Assests/images/Samsung/Galaxy Z Flip/samsung-galaxy-z-flip-1.jpg",
+               img2: "../Assests/images/Samsung/Galaxy Z Flip/samsung-galaxy-z-flip-10.jpg",
+               img3: "../Assests/images/Samsung/Galaxy Z Flip/gsmarena_011 (2).jpg",
+               price: "N/A",
+               chip: "Qualcomm SM8150 Snapdragon 855+ (7 nm)",
+               fcam: 10,
+               rcam: "Dual: 12,12",
+               nfc: "Yes",
+               colors: "Mirror Black, Mirror Purple, Mirror Gold, Thom Browne Edition",
+               os: "Android 10",
+               usb: "USB Type-C 2.0, OTG",
+               release: "2020, February 14",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+            {
+               img: "../Assests/images/Samsung/Galaxy Z Fold 4/Galaxy Z Fold 4.png",
+               title: "Galaxy Z Fold 4",
+               brand: "Samsung",
+               display: "7.6",
+               rom: "256/512",
+               ram: "12",
+               battery: "4400",
+               id: 44,
+            },
+            {
+               img: "../Assests/images/Samsung/Galaxy Z Fold 5/Galaxy Z Fold 5.png",
+               title: "Galaxy Z Fold 5",
+               brand: "Samsung",
+               display: "7.6",
+               rom: "256/512",
+               ram: "12",
+               battery: "4400",
+               id: 45,
+            },
+            {
+               img: "../Assests/images/Samsung/Galaxy Z Fold 6/Galaxy Z Fold 6.png",
+               title: "Galaxy Z Fold 6",
+               brand: "Samsung",
+               display: "7.6",
+               rom: "256/512",
+               ram: "12",
+               battery: "4400",
+               id: 46,
+            },
+            {
+               img: "../Assests/images/Samsung/S23 Ultra/S23 Ultra.webp",
+               title: "S23 Ultra",
+               brand: "Samsung",
+               display: "6.8",
+               rom: "256/512",
+               ram: "8/12",
+               battery: "5000",
+               id: 47,
+            },
+            {
+               img: "../Assests/images/Samsung/S24 Ultra/S24 Ultra.png",
+               title: "S24 Ultra",
+               brand: "Samsung",
+               display: "6.8",
+               rom: "256/512",
+               ram: "12",
+               battery: "5000",
+               id: 48,
+               img1: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-1.jpg",
+               img2: "../Assests/images/GooglePixel/Pixel 7a/google-pixel-7a-3.jpg",
+               img3: "../Assests/images/GooglePixel/Pixel 7a/gsmarena_002.jpg",
+               price: 179.95,
+               chip: "Google Tensor G2 (5 nm)",
+               fcam: 13,
+               rcam: 64,
+               nfc: "Yes",
+               colors: "Charcoal, Snow, Sea, Coral",
+               os: "Android 13",
+               usb: "USB-C",
+               release: "2023, May 10",
+               sim: "Nano-SIM and eSIM",
+               finger: "Yes",
+            },
+         ]
 
 
-      // Get the card ID from the URL query parameter
-      const urlParams = new URLSearchParams(window.location.search);
-      const cardId = parseInt(urlParams.get('id'));
 
-      // Find the card by ID
-      const card = cards.find(a => a.id === cardId);
+         // Get the card ID from the URL query parameter
+         const urlParams = new URLSearchParams(window.location.search);
+         const cardId = parseInt(urlParams.get('id'));
 
-      if (card) {
-         document.getElementById('card-details').innerHTML =`
+         // Find the card by ID
+         const card = cards.find(a => a.id === cardId);
+
+         if (card) {
+            document.getElementById('card-details').innerHTML = `
 
    
-         <h1 style="color: #ffd700;" class="mt-5">${card.title}</h1>
-         <h3 style="color: #ffd700;">${card.brand}</h3>
+               <h1 class="text-center mt-5">${card.title}</h1>
+               <h2 class="text-center mb-5 text-warning fs-3w">${card.brand}</h2>
+         <div class="container-fluid d-flex justify-content-start align-items-start">
+      <div class="img-section">
+        <img id="mainImage" src="${card.img}" alt="">
+        <div class="sub-images">
+          <img class="thumbnail" src="${card.img}" alt="">
+          <img class="thumbnail" src="${card.img1}" alt="">
+          <img class="thumbnail" src="${card.img2}" alt="">
+          <img class="thumbnail" src="${card.img3}" alt="">
+        </div>
+      </div>
+      <div class="tableArea">
+        <table>
+         <thead>
+            <tr>
+               <th style="padding: 0px 10px">International wPrice</th>
+              <th style="padding: 0px 10px">RAM</th>
+              <th style="padding: 0px 10px">Storage/ROM</th>
+              <th style="padding: 0px 10px">Processor</th>
+              <th style="padding: 0px 10px">Battery</th>
+              <th style="padding: 0px 10px">Front Camera</th>
+              <th style="padding: 0px 10px">Rear Camera</th>
+              <th style="padding: 0px 10px">Display</th>
+              <th style="padding: 0px 10px">NFC</th>
+              <th style="padding: 0px 10px">Colors</th>
+              <th style="padding: 0px 10px">Operating System(OS)</th>
+              <th style="padding: 0px 10px">Charging Type</th>
+              <th style="padding: 0px 10px">SIM</th>
+              <th style="padding: 0px 10px">Fingerprint</th>
+              <th style="padding: 0px 10px">Release Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 0px 10px">$${card.price}</td>
+              <td style="padding: 0px 10px">${card.ram} GB RAM</td>
+              <td style="padding: 0px 10px">${card.rom} GB</td>
+              <td style="padding: 0px 10px">${card.chip}</td>
+              <td style="padding: 0px 10px">${card.battery} mAh</td>
+              <td style="padding: 0px 10px">${card.fcam} MP</td>
+              <td style="padding: 0px 10px">${card.rcam} MP</td>
+              <td style="padding: 0px 10px">${card.display}" Inch</td>
+              <td style="padding: 0px 10px">${card.nfc}</td>
+              <td style="padding: 0px 10px">${card.colors}</td>
+              <td style="padding: 0px 10px">${card.os}</td>
+              <td style="padding: 0px 10px">${card.usb}</td>
+              <td style="padding: 0px 10px">${card.sim}</td>
+              <td style="padding: 0px 10px">${card.finger}</td>
+              <td style="padding: 0px 10px">${card.release}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+   `;
+         } else {
+            document.getElementById('card-details').innerHTML = '<p>Card not found.</p>';
+         }
+      </script>
 
-         <img src="${card.img}" class="mt-3 col-6" alt="" id="mainImage">
+      <script>
+
+         mainImage = document.getElementById("mainImage");
+         thumbnails = document.querySelectorAll(".thumbnail");
+
+         thumbnails.forEach(thumbnail => {
+            thumbnail.addEventListener("click", function () {
+               mainImage.src = thumbnail.src
+            })
+         }
+
+         );
+      </script>
+   </section>
+   <footer style="border-top: 1px solid grey;" class="footer">
+      <div class="container bottom_border">
          <div class="row">
-            <div class="d-flex flex-row col-lg-12 col-sm-6 mb-5 mt-5 gap-3" style="height: 20vh;">
-               <img style="cursor: pointer;" src="${card.img}" alt="" class="thumbnail">
-               <img style="cursor: pointer;" src="${card.img1}" alt="" class="thumbnail">
-               <img style="cursor: pointer;" src="${card.img2}" alt="" class="thumbnail">
-               <img style="cursor: pointer;" src="${card.img3}" alt="" class="thumbnail">
+            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+               <p><i class="fa fa-location-arrow" style="color: #ffd700;"></i> A-65, ACME Co., Street No. 12, New
+                  York</p>
+               <p><i class="fa fa-phone" style="color: #ffd700;"></i> +001-28272300-2466-2469 </p>
+               <p><i class="fa fa fa-envelope" style="color: #ffd700;"></i> webmaster@cellinfo.com </p>
+            </div>
+
+
+            <div class=" col-sm-4 col-md  col-6 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Phones</h5>
+               <!--headin5_amrc-->
+               <ul class="footer_ul_amrc">
+                  <li><a style="font-weight: 900; text-decoration: underline;" href="android.html">Android</a>
+                  </li>
+                  <li><a href="samsung.html">Samsung</a></li>
+                  <li><a href="redmi.html">Redmi</a></li>
+                  <li><a href="oneplus.html">One Plus</a></li>
+                  <li><a href="nokia.html">Nokia</a></li>
+                  <li><a href="pixel.html">Google Pixels</a></li>
+                  <li><a style="font-weight: 900; text-decoration: underline;" href="ios.html">iOS</a></li>
+                  <li><a href="iphone.html">IPhone</a></li>
+                  <li><a href="ipad.html">IPad</a></li>
+                  <li><a href="ipod.html">IPod</a></li>
+               </ul>
+            </div>
+
+
+            <div class=" col-sm-4 col-md  col-6 col">
+               <h5 class="headin5_amrc col_white_amrc pt2">Compare</h5>
+               <ul class="footer_ul_amrc">
+                  <li><a href="compare.html">Click Here To Compare</a></li>
+               </ul>
             </div>
          </div>
       </div>
-   </div>
-   <div class="informations container d-flex flex-column justify-content-center align-items-center">
-      <h1 style="background-color: #ffd700; color: #1c1c1c; width:10em; text-align: center;" class="mt-5 mb-5">Phone Details</h1>
-      <h2 style="background-color: #fdfdfd; text-align: center; font-size:1.5em;" class="mt-2 mb-5">International Price: $${card.price}</h2>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">RAM:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.ram}GB</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Storage/ROM:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.rom}GB</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Processor:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.chip}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Battery:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.battery}mAh</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Front Camera:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.fcam}MP</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Rear Camera:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.rcam}MP</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Display:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.display}"Inches</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">NFC:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.nfc}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Colors:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.colors}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Operating System:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.os}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Charging Type:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.usb}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Release Date:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.release}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">SIM:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.sim}</p>
-      </div>
-      <div class="d-flex flex-row justify-content-center">
-         <p style="color:#ffd700; font-size:1.5em ;">Fingerprint:</p>
-         <p style="color:#FDFDFD; font-size:1.5em ;">${card.finger}</p>
-      </div>
-   </div>
-   `;
-} else {
-   document.getElementById('card-details').innerHTML = '<p>Card not found.</p>';
-}
-</script>
-
-<script>
-
-   mainImage = document.getElementById("mainImage");
-   thumbnails = document.querySelectorAll(".thumbnail");
-
-   thumbnails.forEach(thumbnail => {
-      thumbnail.addEventListener("click", function () {
-         mainImage.src = thumbnail.src
-      })
-   }
-
-   );
-</script>
-</div>
-</div>
-<footer style="border-top: 1px solid grey;" class="footer">
-   <div class="container bottom_border">
-      <div class="row">
-         <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-            <p><i class="fa fa-location-arrow" style="color: #ffd700;"></i> A-65, ACME Co., Street No. 12, New
-               York</p>
-            <p><i class="fa fa-phone" style="color: #ffd700;"></i> +001-28272300-2466-2469 </p>
-            <p><i class="fa fa fa-envelope" style="color: #ffd700;"></i> webmaster@cellinfo.com </p>
-         </div>
 
 
-         <div class=" col-sm-4 col-md  col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">Phones</h5>
-            <!--headin5_amrc-->
-            <ul class="footer_ul_amrc">
-               <li><a style="font-weight: 900; text-decoration: underline;" href="android.html">Android</a>
-               </li>
-               <li><a href="samsung.html">Samsung</a></li>
-               <li><a href="redmi.html">Redmi</a></li>
-               <li><a href="oneplus.html">One Plus</a></li>
-               <li><a href="nokia.html">Nokia</a></li>
-               <li><a href="pixel.html">Google Pixels</a></li>
-               <li><a style="font-weight: 900; text-decoration: underline;" href="ios.html">iOS</a></li>
-               <li><a href="iphone.html">IPhone</a></li>
-               <li><a href="ipad.html">IPad</a></li>
-               <li><a href="ipod.html">IPod</a></li>
-            </ul>
-         </div>
-
-
-         <div class=" col-sm-4 col-md  col-6 col">
-            <h5 class="headin5_amrc col_white_amrc pt2">Compare</h5>
-            <ul class="footer_ul_amrc">
-               <li><a href="compare.html">Click Here To Compare</a></li>
-            </ul>
-         </div>
+      <div class="container">
+         <ul class="foote_bottom_ul_amrc">
+            <li><a href="home.html" style="color: #ffd700;">Home</a></li>
+            <li><a href="about.html" style="color: #ffd700;">About</a></li>
+            <li><a href="contact.html" style="color: #ffd700;">Contact Us</a></li>
+            <li><a href="phones.html" style="color: #ffd700;">Phones</a></li>
+         </ul>
       </div>
-   </div>
-
-
-   <div class="container">
-      <ul class="foote_bottom_ul_amrc">
-         <li><a href="home.html" style="color: #ffd700;">Home</a></li>
-         <li><a href="about.html" style="color: #ffd700;">About</a></li>
-         <li><a href="contact.html" style="color: #ffd700;">Contact Us</a></li>
-         <li><a href="phones.html" style="color: #ffd700;">Phones</a></li>
-      </ul>
-   </div>
-</footer>
-<script src="../Assests/js/phonesdetails.js"></script>
+   </footer>
+   <script src="../Assests/js/phonesdetails.js"></script>
 </body>
+
 </html>

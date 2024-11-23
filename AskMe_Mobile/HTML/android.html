@@ -35,381 +35,383 @@
 
 <body>
    <header style="border-bottom: 1px solid gray;">
-      <nav id='cssmenu'>
-          <div class="logo"><a href="home.html"><img src="../Assests/images/Logo-cropped-removebg-preview.png"
-                      height="30%" width="30%"></a>
-              <div class="brandName">
+      <header style="border-bottom: 1px solid grey; width: 100%;">
+         <nav id='cssmenu' style="width: 100%;">
+            <div class="logo" style="margin-right: 50vw;">
+               <a href="home.html">
+                  <img src="../Assests/images/Logo-removebg-preview.png" height="60%" width="60%"></a>
+               <div class="brandName">
                   <p>Ask Me</p>
                   <p class="sig">Ltd.</p>
-              </div>
-          </div>
-          <div id="head-mobile"></div>
-          <div class="button"></div>
-          <ul style="z-index: 123;">
-              <li><a href='home.html'>HOME</a></li>
-              <li><a href='about.html'>ABOUT</a></li>
-              <li><a href='compare.html'>COMPARE</a></li>
-              <li class='active'><a href='phones.html'>PHONES</a>
+               </div>
+            </div>
+            <div id="head-mobile"></div>
+            <div class="button"></div>
+            <ul style="z-index: 123; background-color: rgba(28, 28, 28, 0);">
+               <li><a href='home.html'>HOME</a></li>
+               <li class='active'><a href='phones.html'>PHONES</a>
                   <ul>
-                      <li><a href='ios.html'>iOS</a>
-                          <ul>
-                              <li><a href='ipod.html'>IPods</a></li>
-                              <li><a href='iphone.html'>IPhones</a></li>
-                              <li><a href='ipad.html'>IPads</a></li>
-                          </ul>
-                      </li>
-                      <li><a href='android.html'>Android</a>
-                          <ul>
-                              <li><a href='samsung.html'>Samsung</a></li>
-                              <li><a href='oneplus.html'>OnePlus+</a></li>
-                              <li><a href='pixel.html'>Google Pixels</a></li>
-                              <li><a href='nokia.html'>Nokia</a></li>
-                              <li><a href='redmi.html'>Redmi</a></li>
-                          </ul>
-                      </li>
+                     <li><a href='ios.html'>iOS</a>
+                        <ul>
+                           <li><a href='ipod.html'>IPods</a></li>
+                           <li><a href='iphone.html'>IPhones</a></li>
+                           <li><a href='ipad.html'>IPads</a></li>
+                        </ul>
+                     </li>
+                     <li><a href='android.html'>Android</a>
+                        <ul>
+                           <li><a href='samsung.html'>Samsung</a></li>
+                           <li><a href='oneplus.html'>OnePlus+</a></li>
+                           <li><a href='pixel.html'>Google Pixels</a></li>
+                           <li><a href='nokia.html'>Nokia</a></li>
+                           <li><a href='redmi.html'>Redmi</a></li>
+                        </ul>
+                     </li>
                   </ul>
-              </li>
-              <li><a href='contact.html'>CONTACT</a></li>
-          </ul>
-      </nav>
-  </header>
+               </li>
+               <li><a href='about.html'>ABOUT</a></li>
+               <li><a href='compare.html'>COMPARE</a></li>
+               <li><a href='contact.html'>CONTACT</a></li>
+            </ul>
+         </nav>
+      </header>
 
-   
-  <section class="container-fluid sortFilter d-flex justify-content-between align-items-center gap-5">
-   <h1 class="fs-lg-1 fs-sm-6">Sort And Filter</h1>
-   <div class="dropdown gap-5">
-      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-         aria-expanded="false">
-         Sort by OS
-      </button>
-      <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-         <li><a class="dropdown-item text-white" href="phones.html">All Phones</a></li>
-         <li><a class="dropdown-item text-white" href="ios.html">iOS</a></li>
-      </ul>
-      <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
-         aria-expanded="false">
-         Sort by Brands
-      </button>
-      <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
-         <li><a class="dropdown-item text-white" href="redmi.html">Redmi</a></li>
-         <li><a class="dropdown-item text-white" href="pixel.html">GooglePixel</a></li>
-         <li><a class="dropdown-item text-white" href="oneplus.html">OnePlus</a></li>
-         <li><a class="dropdown-item text-white" href="nokia.html">Nokia</a></li>
-         <li><a class="dropdown-item text-white" href="samsung.html">Samsung</a></li>
-      </ul>
-   </div>
-</section>
-   <br>
-   <h1 style="color: #ffd700; margin-top: 1em; text-align: center;">Android Phones</h1>
-   <br>
-   <div class="container-fluid mt-5">
-      <div class="row">
-         <script>
-            cards = [
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png",
-                  title: "Pixel 7 Pro",
-                  brand: "Google Pixels",
-                  display: "6.7",
-                  rom: "128/256",
-                  ram: "8/12",
-                  battery: "5000",
-                  id: 1,
-               },
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 7a/Pixel 7a.jpg",
-                  title: "Pixel 7a",
-                  brand: "Google Pixels",
-                  display: "6.1",
-                  rom: "128",
-                  ram: "8",
-                  battery: "4385",
-                  id: 2,
-               },
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 8 Pro/Pixel 8Pro.png",
-                  title: "Pixel 8 Pro",
-                  brand: "Google Pixels",
-                  display: "6.7",
-                  rom: "128/256",
-                  ram: "12",
-                  battery: "5050",
-                  id: 3,
-               },
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 8a/Pixel 8a.png",
-                  title: "Pixel 8a",
-                  brand: "Google Pixels",
-                  display: "6.1",
-                  rom: "128/256",
-                  ram: "8",
-                  battery: "4492",
-                  id: 4,
-               },
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 9 Pro/Pixel 9Pro.webp",
-                  title: "Pixel 9 Pro",
-                  brand: "Google Pixels",
-                  display: "6.3",
-                  rom: "128/256",
-                  ram: "16",
-                  battery: "4700",
-                  id: 5,
-               },
-               {
-                  img: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/Pixel 9ProFold.png",
-                  title: "Pixel 9 Pro Fold",
-                  brand: "Google Pixels",
-                  display: "8.0",
-                  rom: "256/512",
-                  ram: "16",
-                  battery: "4650",
-                  id: 6,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia 5.4/Nokia 5.4.png",
-                  title: "Nokia 5.4",
-                  brand: "Nokia",
-                  display: "6.39",
-                  rom: "64/128",
-                  ram: "4/6",
-                  battery: "4000",
-                  id: 25,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia 7 Plus/Nokia 7 Plus.png",
-                  title: "Nokia 7 Plus",
-                  brand: "Nokia",
-                  display: "6.0",
-                  rom: "64",
-                  ram: "4/6",
-                  battery: "3800",
-                  id: 26,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia 8.3 5G/Nokia 8.3 5G.png",
-                  title: "Nokia 8.3 5G",
-                  brand: "Nokia",
-                  display: "6.81",
-                  rom: "64/128",
-                  ram: "6/8",
-                  battery: "4500",
-                  id: 27,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia G42 5G Dual Sim/Nokia G42 5G.webp",
-                  title: "Nokia G42 5G",
-                  brand: "Nokia",
-                  display: "6.56",
-                  rom: "128/256",
-                  ram: "4/8",
-                  battery: "5000",
-                  id: 28,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia X30 Dual Sim 5G/Nokia X30.jpg",
-                  title: "Nokia X30",
-                  brand: "Nokia",
-                  display: "6.43",
-                  rom: "128/256",
-                  ram: "6/8",
-                  battery: "4200",
-                  id: 29,
-               },
-               {
-                  img: "../Assests/images/Nokia/Nokia XR21 5G/Nokia XR21 5G.png",
-                  title: "Nokia XR21 5G",
-                  brand: "Nokia",
-                  display: "6.49",
-                  rom: "128",
-                  ram: "6",
-                  battery: "4800",
-                  id: 30,
-               },
-               {
-                  img: "../Assests/images/OnePlus/One Plus 11/One Plus 11.png",
-                  title: "One Plus 11",
-                  brand: "OnePlus",
-                  display: "6.7",
-                  rom: "128/256",
-                  ram: "8-16",
-                  battery: "5000",
-                  id: 31,
-               },
-               {
-                  img: "../Assests/images/OnePlus/One Plus Nord CE 3 Lite 5G/One Plus Nord CE 3 Lite 5G.png",
-                  title: "One Plus Nord CE 3 Lite 5G",
-                  brand: "OnePlus",
-                  display: "6.72",
-                  rom: "128/256",
-                  ram: "8",
-                  battery: "5000",
-                  id: 32,
-               },
-               {
-                  img: "../Assests/images/OnePlus/One Plus Nord CE 4 Lite 5G/One Plus Nord CE 4 Lite 5G.png",
-                  title: "One Plus Nord CE 4 Lite 5G",
-                  brand: "OnePlus",
-                  display: "6.67",
-                  rom: "256",
-                  ram: "8",
-                  battery: "5110",
-                  id: 33,
-               },
-               {
-                  img: "../Assests/images/OnePlus/One Plus Open/One Plus Open.png",
-                  title: "One Plus Open",
-                  brand: "OnePlus",
-                  display: "7.82",
-                  rom: "1 TB/512",
-                  ram: "16",
-                  battery: "4805",
-                  id: 34,
-               },
-               {
-                  img: "../Assests/images/OnePlus/OnePlus 12/OnePlus 12.png",
-                  title: "OnePlus 12",
-                  brand: "OnePlus",
-                  display: "6.82",
-                  rom: "256/512",
-                  ram: "12-24",
-                  battery: "5400",
-                  id: 35,
-               },
-               {
-                  img: "../Assests/images/OnePlus/OnePlus 12R/OnePlus 12R.png",
-                  title: "OnePlus 12R",
-                  brand: "OnePlus",
-                  display: "6.78",
-                  rom: "128/256",
-                  ram: "8-16",
-                  battery: "5500",
-                  id: 36,
-               },
-               {
-                  img: "../Assests/images/Redmi/Note 13/Note 13.png",
-                  title: "Note 13",
-                  brand: "Redmi",
-                  display: "6.67",
-                  rom: "128/256",
-                  ram: "6-12",
-                  battery: "5000",
-                  id: 37,
-               },
-               {
-                  img: "../Assests/images/Redmi/Note 13 Pro/Note 13 Pro.png",
-                  title: "Note 13 Pro",
-                  brand: "Redmi",
-                  display: "6.67",
-                  rom: "128/256",
-                  ram: "8-16",
-                  battery: "5100",
-                  id: 38,
-               },
-               {
-                  img: "../Assests/images/Redmi/Redmi 12/Redmi 12.webp",
-                  title: "Redmi 12",
-                  brand: "Redmi",
-                  display: "6.79",
-                  rom: "128/256",
-                  ram: "2-8",
-                  battery: "5000",
-                  id: 39,
-               },
-               {
-                  img: "../Assests/images/Redmi/Redmi 13/Redmi 13.png",
-                  title: "Redmi 13",
-                  brand: "Redmi",
-                  display: "6.79",
-                  rom: "128/256",
-                  ram: "6/8",
-                  battery: "5030",
-                  id: 40,
-               },
-               {
-                  img: "../Assests/images/Redmi/Redmi Note 8/Redmi Note 8.png",
-                  title: "Redmi Note 8",
-                  brand: "Redmi",
-                  display: "6.3",
-                  rom: "32/64",
-                  ram: "3-6",
-                  battery: "4000",
-                  id: 41,
-               },
-               {
-                  img: "../Assests/images/Redmi/Redmi Note 11/Redmi Note 11.webp",
-                  title: "Redmi Note 11",
-                  brand: "Redmi",
-                  display: "6.43",
-                  rom: "64/128",
-                  ram: "4/6",
-                  battery: "5000",
-                  id: 42,
-               },
-               {
-                  img: "../Assests/images/Samsung/Galaxy Z Flip/Galaxy Z Flip.png",
-                  title: "Galaxy Z Flip",
-                  brand: "Samsung",
-                  display: "6.7",
-                  rom: "256",
-                  ram: "8",
-                  battery: "3300",
-                  id: 43,
-               },
-               {
-                  img: "../Assests/images/Samsung/Galaxy Z Fold 4/Galaxy Z Fold 4.png",
-                  title: "Galaxy Z Fold 4",
-                  brand: "Samsung",
-                  display: "7.6",
-                  rom: "256/512",
-                  ram: "12",
-                  battery: "4400",
-                  id: 44,
-               },
-               {
-                  img: "../Assests/images/Samsung/Galaxy Z Fold 5/Galaxy Z Fold 5.png",
-                  title: "Galaxy Z Fold 5",
-                  brand: "Samsung",
-                  display: "7.6",
-                  rom: "256/512",
-                  ram: "12",
-                  battery: "4400",
-                  id: 45,
-               },
-               {
-                  img: "../Assests/images/Samsung/Galaxy Z Fold 6/Galaxy Z Fold 6.png",
-                  title: "Galaxy Z Fold 6",
-                  brand: "Samsung",
-                  display: "7.6",
-                  rom: "256/512",
-                  ram: "12",
-                  battery: "4400",
-                  id: 46,
-               },
-               {
-                  img: "../Assests/images/Samsung/S23 Ultra/S23 Ultra.webp",
-                  title: "S23 Ultra",
-                  brand: "Samsung",
-                  display: "6.8",
-                  rom: "256/512",
-                  ram: "8/12",
-                  battery: "5000",
-                  id: 47,
-               },
-               {
-                  img: "../Assests/images/Samsung/S24 Ultra/S24 Ultra.png",
-                  title: "S24 Ultra",
-                  brand: "Samsung",
-                  display: "6.8",
-                  rom: "256/512",
-                  ram: "12",
-                  battery: "5000",
-                  id: 48,
-               },
-            ]
 
-            cards.forEach(function (cards) {
-               document.write(`
+      <section class="container-fluid sortFilter d-flex justify-content-between align-items-center gap-5">
+         <h1 class="fs-lg-1 fs-sm-6">Sort And Filter</h1>
+         <div class="dropdown gap-5">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+               aria-expanded="false">
+               Sort by OS
+            </button>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+               <li><a class="dropdown-item text-white" href="phones.html">All Phones</a></li>
+               <li><a class="dropdown-item text-white" href="ios.html">iOS</a></li>
+            </ul>
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown"
+               aria-expanded="false">
+               Sort by Brands
+            </button>
+            <ul class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+               <li><a class="dropdown-item text-white" href="redmi.html">Redmi</a></li>
+               <li><a class="dropdown-item text-white" href="pixel.html">GooglePixel</a></li>
+               <li><a class="dropdown-item text-white" href="oneplus.html">OnePlus</a></li>
+               <li><a class="dropdown-item text-white" href="nokia.html">Nokia</a></li>
+               <li><a class="dropdown-item text-white" href="samsung.html">Samsung</a></li>
+            </ul>
+         </div>
+      </section>
+      <br>
+      <h1 style="color: #ffd700; margin-top: 1em; text-align: center;">Android Phones</h1>
+      <br>
+      <div class="container-fluid mt-5">
+         <div class="row">
+            <script>
+               cards = [
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 7 Pro/Pixel7Pro.png",
+                     title: "Pixel 7 Pro",
+                     brand: "Google Pixels",
+                     display: "6.7",
+                     rom: "128/256",
+                     ram: "8/12",
+                     battery: "5000",
+                     id: 1,
+                  },
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 7a/Pixel 7a.jpg",
+                     title: "Pixel 7a",
+                     brand: "Google Pixels",
+                     display: "6.1",
+                     rom: "128",
+                     ram: "8",
+                     battery: "4385",
+                     id: 2,
+                  },
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 8 Pro/Pixel 8Pro.png",
+                     title: "Pixel 8 Pro",
+                     brand: "Google Pixels",
+                     display: "6.7",
+                     rom: "128/256",
+                     ram: "12",
+                     battery: "5050",
+                     id: 3,
+                  },
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 8a/Pixel 8a.png",
+                     title: "Pixel 8a",
+                     brand: "Google Pixels",
+                     display: "6.1",
+                     rom: "128/256",
+                     ram: "8",
+                     battery: "4492",
+                     id: 4,
+                  },
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 9 Pro/Pixel 9Pro.webp",
+                     title: "Pixel 9 Pro",
+                     brand: "Google Pixels",
+                     display: "6.3",
+                     rom: "128/256",
+                     ram: "16",
+                     battery: "4700",
+                     id: 5,
+                  },
+                  {
+                     img: "../Assests/images/GooglePixel/Pixel 9 Pro Fold/Pixel 9ProFold.png",
+                     title: "Pixel 9 Pro Fold",
+                     brand: "Google Pixels",
+                     display: "8.0",
+                     rom: "256/512",
+                     ram: "16",
+                     battery: "4650",
+                     id: 6,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia 5.4/Nokia 5.4.png",
+                     title: "Nokia 5.4",
+                     brand: "Nokia",
+                     display: "6.39",
+                     rom: "64/128",
+                     ram: "4/6",
+                     battery: "4000",
+                     id: 25,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia 7 Plus/Nokia 7 Plus.png",
+                     title: "Nokia 7 Plus",
+                     brand: "Nokia",
+                     display: "6.0",
+                     rom: "64",
+                     ram: "4/6",
+                     battery: "3800",
+                     id: 26,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia 8.3 5G/Nokia 8.3 5G.png",
+                     title: "Nokia 8.3 5G",
+                     brand: "Nokia",
+                     display: "6.81",
+                     rom: "64/128",
+                     ram: "6/8",
+                     battery: "4500",
+                     id: 27,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia G42 5G Dual Sim/Nokia G42 5G.webp",
+                     title: "Nokia G42 5G",
+                     brand: "Nokia",
+                     display: "6.56",
+                     rom: "128/256",
+                     ram: "4/8",
+                     battery: "5000",
+                     id: 28,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia X30 Dual Sim 5G/Nokia X30.jpg",
+                     title: "Nokia X30",
+                     brand: "Nokia",
+                     display: "6.43",
+                     rom: "128/256",
+                     ram: "6/8",
+                     battery: "4200",
+                     id: 29,
+                  },
+                  {
+                     img: "../Assests/images/Nokia/Nokia XR21 5G/Nokia XR21 5G.png",
+                     title: "Nokia XR21 5G",
+                     brand: "Nokia",
+                     display: "6.49",
+                     rom: "128",
+                     ram: "6",
+                     battery: "4800",
+                     id: 30,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/One Plus 11/One Plus 11.png",
+                     title: "One Plus 11",
+                     brand: "OnePlus",
+                     display: "6.7",
+                     rom: "128/256",
+                     ram: "8-16",
+                     battery: "5000",
+                     id: 31,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/One Plus Nord CE 3 Lite 5G/One Plus Nord CE 3 Lite 5G.png",
+                     title: "One Plus Nord CE 3 Lite 5G",
+                     brand: "OnePlus",
+                     display: "6.72",
+                     rom: "128/256",
+                     ram: "8",
+                     battery: "5000",
+                     id: 32,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/One Plus Nord CE 4 Lite 5G/One Plus Nord CE 4 Lite 5G.png",
+                     title: "One Plus Nord CE 4 Lite 5G",
+                     brand: "OnePlus",
+                     display: "6.67",
+                     rom: "256",
+                     ram: "8",
+                     battery: "5110",
+                     id: 33,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/One Plus Open/One Plus Open.png",
+                     title: "One Plus Open",
+                     brand: "OnePlus",
+                     display: "7.82",
+                     rom: "1 TB/512",
+                     ram: "16",
+                     battery: "4805",
+                     id: 34,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/OnePlus 12/OnePlus 12.png",
+                     title: "OnePlus 12",
+                     brand: "OnePlus",
+                     display: "6.82",
+                     rom: "256/512",
+                     ram: "12-24",
+                     battery: "5400",
+                     id: 35,
+                  },
+                  {
+                     img: "../Assests/images/OnePlus/OnePlus 12R/OnePlus 12R.png",
+                     title: "OnePlus 12R",
+                     brand: "OnePlus",
+                     display: "6.78",
+                     rom: "128/256",
+                     ram: "8-16",
+                     battery: "5500",
+                     id: 36,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Note 13/Note 13.png",
+                     title: "Note 13",
+                     brand: "Redmi",
+                     display: "6.67",
+                     rom: "128/256",
+                     ram: "6-12",
+                     battery: "5000",
+                     id: 37,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Note 13 Pro/Note 13 Pro.png",
+                     title: "Note 13 Pro",
+                     brand: "Redmi",
+                     display: "6.67",
+                     rom: "128/256",
+                     ram: "8-16",
+                     battery: "5100",
+                     id: 38,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Redmi 12/Redmi 12.webp",
+                     title: "Redmi 12",
+                     brand: "Redmi",
+                     display: "6.79",
+                     rom: "128/256",
+                     ram: "2-8",
+                     battery: "5000",
+                     id: 39,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Redmi 13/Redmi 13.png",
+                     title: "Redmi 13",
+                     brand: "Redmi",
+                     display: "6.79",
+                     rom: "128/256",
+                     ram: "6/8",
+                     battery: "5030",
+                     id: 40,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Redmi Note 8/Redmi Note 8.png",
+                     title: "Redmi Note 8",
+                     brand: "Redmi",
+                     display: "6.3",
+                     rom: "32/64",
+                     ram: "3-6",
+                     battery: "4000",
+                     id: 41,
+                  },
+                  {
+                     img: "../Assests/images/Redmi/Redmi Note 11/Redmi Note 11.webp",
+                     title: "Redmi Note 11",
+                     brand: "Redmi",
+                     display: "6.43",
+                     rom: "64/128",
+                     ram: "4/6",
+                     battery: "5000",
+                     id: 42,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/Galaxy Z Flip/Galaxy Z Flip.png",
+                     title: "Galaxy Z Flip",
+                     brand: "Samsung",
+                     display: "6.7",
+                     rom: "256",
+                     ram: "8",
+                     battery: "3300",
+                     id: 43,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/Galaxy Z Fold 4/Galaxy Z Fold 4.png",
+                     title: "Galaxy Z Fold 4",
+                     brand: "Samsung",
+                     display: "7.6",
+                     rom: "256/512",
+                     ram: "12",
+                     battery: "4400",
+                     id: 44,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/Galaxy Z Fold 5/Galaxy Z Fold 5.png",
+                     title: "Galaxy Z Fold 5",
+                     brand: "Samsung",
+                     display: "7.6",
+                     rom: "256/512",
+                     ram: "12",
+                     battery: "4400",
+                     id: 45,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/Galaxy Z Fold 6/Galaxy Z Fold 6.png",
+                     title: "Galaxy Z Fold 6",
+                     brand: "Samsung",
+                     display: "7.6",
+                     rom: "256/512",
+                     ram: "12",
+                     battery: "4400",
+                     id: 46,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/S23 Ultra/S23 Ultra.webp",
+                     title: "S23 Ultra",
+                     brand: "Samsung",
+                     display: "6.8",
+                     rom: "256/512",
+                     ram: "8/12",
+                     battery: "5000",
+                     id: 47,
+                  },
+                  {
+                     img: "../Assests/images/Samsung/S24 Ultra/S24 Ultra.png",
+                     title: "S24 Ultra",
+                     brand: "Samsung",
+                     display: "6.8",
+                     rom: "256/512",
+                     ram: "12",
+                     battery: "5000",
+                     id: 48,
+                  },
+               ]
+
+               cards.forEach(function (cards) {
+                  document.write(`
                      <div class="col-lg-3 col-md-6 col-sm-12">
                      <div class="flip-card col mb-5">
                         <div class="flip-card-inner">
@@ -443,62 +445,63 @@
                      </div>
                      </div>
                      `)
-            })
-         </script>
-      </div>
-   </div>
-
-   <footer style="border-top: 1px solid grey;" class="footer">
-      <div class="container bottom_border">
-         <div class="row">
-            <div class=" col-sm-4 col-md col-sm-4  col-12 col">
-               <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-               <p><i class="fa fa-location-arrow" style="color: #ffd700;"></i> A-65, ACME Co., Street No. 12, New York
-               </p>
-               <p><i class="fa fa-phone" style="color: #ffd700;"></i> +001-28272300-2466-2469 </p>
-               <p><i class="fa fa fa-envelope" style="color: #ffd700;"></i> webmaster@cellinfo.com </p>
-            </div>
-
-
-            <div class=" col-sm-4 col-md  col-6 col">
-               <h5 class="headin5_amrc col_white_amrc pt2">Phones</h5>
-               <!--headin5_amrc-->
-               <ul class="footer_ul_amrc">
-                  <li><a style="font-weight: 900; text-decoration: underline;" href="android.html">Android</a></li>
-                  <li><a href="samsung.html">Samsung</a></li>
-                  <li><a href="redmi.html">Redmi</a></li>
-                  <li><a href="oneplus.html">One Plus</a></li>
-                  <li><a href="nokia.html">Nokia</a></li>
-                  <li><a href="pixel.html">Google Pixels</a></li>
-                  <li><a style="font-weight: 900; text-decoration: underline;" href="ios.html">iOS</a></li>
-                  <li><a href="iphone.html">IPhone</a></li>
-                  <li><a href="ipad.html">IPad</a></li>
-                  <li><a href="ipod.html">IPod</a></li>
-               </ul>
-            </div>
-
-
-            <div class=" col-sm-4 col-md  col-6 col">
-               <h5 class="headin5_amrc col_white_amrc pt2">Compare</h5>
-               <ul class="footer_ul_amrc">
-                  <li><a href="compare.html">Click Here To Compare</a></li>
-               </ul>
-            </div>
+               })
+            </script>
          </div>
       </div>
 
+      <footer style="border-top: 1px solid grey;" class="footer">
+         <div class="container bottom_border">
+            <div class="row">
+               <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+                  <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+                  <p><i class="fa fa-location-arrow" style="color: #ffd700;"></i> A-65, ACME Co., Street No. 12, New
+                     York
+                  </p>
+                  <p><i class="fa fa-phone" style="color: #ffd700;"></i> +001-28272300-2466-2469 </p>
+                  <p><i class="fa fa fa-envelope" style="color: #ffd700;"></i> webmaster@cellinfo.com </p>
+               </div>
 
-      <div class="container">
-         <ul class="foote_bottom_ul_amrc">
-            <li><a href="home.html" style="color: #ffd700;">Home</a></li>
-            <li><a href="about.html" style="color: #ffd700;">About</a></li>
-            <li><a href="contact.html" style="color: #ffd700;">Contact Us</a></li>
-            <li><a href="phones.html" style="color: #ffd700;">Phones</a></li>
-         </ul>
 
-      </div>
-   </footer>
-   <script src="../Assests/js/phones.js"></script>
+               <div class=" col-sm-4 col-md  col-6 col">
+                  <h5 class="headin5_amrc col_white_amrc pt2">Phones</h5>
+                  <!--headin5_amrc-->
+                  <ul class="footer_ul_amrc">
+                     <li><a style="font-weight: 900; text-decoration: underline;" href="android.html">Android</a></li>
+                     <li><a href="samsung.html">Samsung</a></li>
+                     <li><a href="redmi.html">Redmi</a></li>
+                     <li><a href="oneplus.html">One Plus</a></li>
+                     <li><a href="nokia.html">Nokia</a></li>
+                     <li><a href="pixel.html">Google Pixels</a></li>
+                     <li><a style="font-weight: 900; text-decoration: underline;" href="ios.html">iOS</a></li>
+                     <li><a href="iphone.html">IPhone</a></li>
+                     <li><a href="ipad.html">IPad</a></li>
+                     <li><a href="ipod.html">IPod</a></li>
+                  </ul>
+               </div>
+
+
+               <div class=" col-sm-4 col-md  col-6 col">
+                  <h5 class="headin5_amrc col_white_amrc pt2">Compare</h5>
+                  <ul class="footer_ul_amrc">
+                     <li><a href="compare.html">Click Here To Compare</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+
+
+         <div class="container">
+            <ul class="foote_bottom_ul_amrc">
+               <li><a href="home.html" style="color: #ffd700;">Home</a></li>
+               <li><a href="about.html" style="color: #ffd700;">About</a></li>
+               <li><a href="contact.html" style="color: #ffd700;">Contact Us</a></li>
+               <li><a href="phones.html" style="color: #ffd700;">Phones</a></li>
+            </ul>
+
+         </div>
+      </footer>
+      <script src="../Assests/js/phones.js"></script>
 </body>
 
 </html>
